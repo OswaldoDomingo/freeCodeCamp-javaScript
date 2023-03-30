@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaciones con el operador lógico "or"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio071.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparaciones con el operador lógico "or"</h1>
+    <h2>Ejercicio 71</h2>
+    Comparaciones con el operador lógico "or"
+    El operador lógico or (||) devuelve true si cualquiera de los operandos es true. De lo contrario, devuelve false. <br>
+
+    El operador lógico or se compone de dos símbolos de barra vertical: (||). Este se puede encontrar normalmente entre las teclas de tabulación y escape. <br>
+
+    El patrón de abajo debería parecer familiar desde los puntos de referencia anteriores:<br>
+    <br>
+    if (num > 10) {<br>
+    return "No";<br>
+    }<br>
+    if (num < 5) {<br>
+    return "No";<br>
+    }<br>
+    return "Yes";<br>
+    devolverá Yes sólo si num está entre 5 y 10 (5 y 10 incluidos). La misma lógica se puede escribir como:<br>
+    <br>
+    if (num > 10 || num < 5) {<br>
+    return "No";<br>
+    }<br>
+    return "Yes";<br>
+    Combina las dos sentencias if en una sola sentencia que devuelva la cadena Outside si val no está entre 10 y 20, inclusivo. <br>
+    De lo contrario, devuelve la cadena Inside.<br>
+    <pre>
+        Código original.
+    function testLogicalOr(val) {
+        // Cambia solo el código debajo de esta línea
+        
+        if (val) {
+            return "Outside";
+        }
+        
+        if (val) {
+            return "Outside";
+        }
+        
+        // Cambia solo el código encima de esta línea
+        return "Inside";
+        }
+        
+        testLogicalOr(15);
+    <pre>
+        Código resuelto
+        function testLogicalOr(val) {
+
+            if (val > 20 || val < 10) {
+              return "Outside";
+            }
+          
+            return "Inside";
+          }
+          
+          testLogicalOr(15);
+    </pre>
+    Pruebas <br>
+    Aprobado:Debes usar el operador || una vez <br>
+    Aprobado:Debes tener una sola sentencia if <br>
+    Aprobado:testLogicalOr(0) debe devolver la cadena Outside <br>
+    Aprobado:testLogicalOr(9) debe devolver la cadena Outside <br>
+    Aprobado:testLogicalOr(10) debe devolver la cadena Inside <br>
+    Aprobado:testLogicalOr(15) debe devolver la cadena Inside <br>
+    Aprobado:testLogicalOr(19) debe devolver la cadena Inside <br>
+    Aprobado:testLogicalOr(20) debe devolver la cadena Inside <br>
+    Aprobado:testLogicalOr(21) debe devolver la cadena Outside <br>
+    Aprobado:testLogicalOr(25) debe devolver la cadena Outside <br>
+</body>
+</html>
