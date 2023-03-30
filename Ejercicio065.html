@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación con el operador de estricta desigualdad</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio065.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador "mayor que"</h1>
+    <h2>Ejercicio 65</h2>
+    
+    Comparación con el operador "mayor o igual que"<br> 
+
+    El operador mayor o igual que (>=) compara el valor de dos números. Si el número de la izquierda es mayor o igual que el número de la derecha, devuelve true. <br>
+    De lo contrario, devuelve false. <br>
+    <br>
+    Al igual que el operador de igualdad, el operador mayor o igual que convertirá los tipos de datos mientras los compara. <br>
+    <br>
+    Ejemplos <br>
+    <br>
+    6   >=  6  // true  <br>
+    7   >= '3' // true <br> 
+    2   >=  3  // false <br>
+    '7' >=  9  // false<br>
+    <br>
+    Agrega el operador mayor o igual que a las líneas indicadas para que el valor devuelto tenga sentido.   
+    <br>
+
+    <pre>
+        function testGreaterOrEqual(val) {
+            if (val >= 20) {  
+              return "20 or Over";
+            }
+          
+            if (val >= 10) {
+              return "10 or Over";
+            }
+          
+            return "Less than 10";
+          }
+          
+          testGreaterOrEqual(10);
+        
+    </pre>
+    Pruebas<br>
+    <br>
+    Aprobado: testGreaterOrEqual(0) debe devolver la cadena Less than 10<br>
+    Aprobado: testGreaterOrEqual(9) debe devolver la cadena Less than 10<br>
+    Aprobado: testGreaterOrEqual(10) debe devolver la cadena 10 or Over<br>
+    Aprobado: testGreaterOrEqual(11) debe devolver la cadena 10 or Over<br>
+    Aprobado: testGreaterOrEqual(19) debe devolver la cadena 10 or Over<br>
+    Aprobado: testGreaterOrEqual(100) debe devolver la cadena 20 or Over<br>
+    Aprobado: testGreaterOrEqual(21) debe devolver la cadena 20 or Over<br>
+    Aprobado: Debes utilizar el operador >= al menos dos veces
+</body>
+</html>

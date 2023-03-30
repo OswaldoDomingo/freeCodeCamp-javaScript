@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica comparando diferentes valores</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio062.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador de desigualdad</h1>
+    <h2>Ejercicio 62</h2>
+    
+El operador de desigualdad (!=) es lo opuesto al operador de igualdad. Esto quiere decir que no es igual, <br>
+y devuelve false cuando la comparación de igualdad devuelva true y vice versa. Al igual que el operador de igualdad, <br>
+el operador de desigualdad convertirá los tipos de datos mientras los compara. <br>
+<br>
+Ejemplos <br>
+<br>
+1 !=  2    // true <br>
+1 != "1"   // false  <br>
+1 != '1'   // false <br>
+1 != true  // false <br>
+0 != false // false <br>
+
+Agrega el operador de desigualdad != en la sentencia if para que la función devuelva la cadena Not Equal cuando val no sea equivalente a 99. <br>
+
+<pre>
+    function testNotEqual(val) {
+        if (val != 99) {
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+      
+      testNotEqual(10);
+    </pre>
+    Pruebas
+    <br>
+    Aprobado: testNotEqual(99) debe devolver la cadena Equal  <br>
+    Aprobado: testNotEqual("99") debe devolver la cadena Equal <br>
+    Aprobado: testNotEqual(12) debe devolver la cadena Not Equal <br>
+    Aprobado: testNotEqual("12") debe devolver la cadena Not Equal <br>
+    Aprobado: testNotEqual("bob") debe devolver la cadena Not Equal <br>
+    Aprobado: Debes utilizar el operador != <br>
+    
+</body>
+</html>

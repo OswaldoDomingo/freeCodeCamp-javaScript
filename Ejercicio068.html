@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaciones con el operador lógico "and"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio067.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparaciones con el operador lógico "and"</h1>
+    <h2>Ejercicio 68</h2>
+    Comparaciones con el operador lógico "and"
+    <br>
+    A veces tendrás que probar más de una cosa a la vez. El operador lógico and (&&) devuelve true si y solo si los operandos a la izquierda y a la derecha son verdaderos.
+    <br>
+    El mismo efecto se podría lograr anidando una sentencia if dentro de otra sentencia if:
+    <br>
+    <pre class="beta">
+    if (num > 5) {
+        if (num < 10) { 
+        return "Yes"; 
+        } 
+    } 
+    return "No"; 
+    </pre>
+
+    solo devolverá Yes si num es mayor que 5 y menor que 10. La misma lógica se puede escribir como: <br>
+    <pre class="beta">
+    if (num > 5 && num < 10) { 
+        return "Yes"; 
+        } 
+        return "No";
+    </pre>
+    
+
+    Reemplaza las dos sentencias if por una sola, usando el operador &&, el cual devolverá la cadena Yes si val es menor o igual a 50 y mayor o igual a 25. <br>
+    De lo contrario, devolverá la cadena No.
+    <pre>
+        Código original.
+    function testLogicalAnd(val) {
+        // Cambia solo el código debajo de esta línea
+        
+        if (val ) {
+            if (val) {
+            return "Yes";
+            }
+        }
+        
+        // Cambia solo el código encima de esta línea
+        return "No";
+        }
+        
+        testLogicalAnd(10);
+    </pre>
+    <pre>
+        Código resuelto
+    function testLogicalAnd(val) {
+
+            if (val <= 50 && val >= 25) {
+            return "Yes";
+            }
+        
+        return "No";
+        }
+        
+        testLogicalAnd(10);
+    </pre>
+    Pruebas 
+    <br>
+    Aprobado: Debes usar el operador && una vez <br>
+    Aprobado: Debes tener una sola sentencia if <br>
+    Aprobado: testLogicalAnd(0) debe devolver la cadena No <br>
+    Aprobado: testLogicalAnd(24) debe devolver la cadena No <br>
+    Aprobado: testLogicalAnd(25) debe devolver la cadena Yes <br>
+    Aprobado: testLogicalAnd(30) debe devolver la cadena Yes <br>
+    Aprobado: testLogicalAnd(50) debe devolver la cadena Yes <br>
+    Aprobado: testLogicalAnd(51) debe devolver la cadena No <br>
+    Aprobado: testLogicalAnd(75) debe devolver la cadena No <br>
+    Aprobado: testLogicalAnd(80) debe devolver la cadena No
+</body>
+</html>

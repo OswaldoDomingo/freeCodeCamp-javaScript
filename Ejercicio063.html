@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación con el operador de estricta desigualdad</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio063.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador de estricta desigualdad</h1>
+    <h2>Ejercicio 63</h2>
+    
+    Comparación con el operador de estricta desigualdad <br>
+
+    El operador de estricta desigualdad !== es el opuesto lógico del operador de estricta igualdad. <br>
+    Esto significa "Estrictamente Desigual", y devuelve false cuando la comparación de estricta igualdad devolvería true y vice versa. <br>
+    El operador de estricta desigualdad no convertirá los tipos de datos. <br>
+    <br>
+    Ejemplos <br>
+    <br>
+    3 !==  3  // false<br>
+    3 !== '3' // true<br>
+    4 !==  3  // true<br>
+    <br>
+    Agrega el operador de estricta desigualdad a la sentencia if para que la función devuelva la cadena Not Equal cuando val no sea estrictamente igual a 17 <br>
+    
+
+    <pre>
+    function testStrictNotEqual(val) {
+        if (val !== 17) {
+            return "Not Equal";
+        }
+        return "Equal";
+        }
+        
+        testStrictNotEqual(10);
+
+    </pre>
+    Pruebas
+    <br>
+    testStrictNotEqual(17) debe devolver la cadena Equal<br>
+    Aprobado: testStrictNotEqual("17") debe devolver la cadena Not Equal<br>
+    Aprobado: testStrictNotEqual(12) debe devolver la cadena Not Equal<br>
+    Aprobado: testStrictNotEqual("bob") debe devolver la cadena Not Equal<br>
+    Aprobado: Debes usar el operador !==<br>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de JavaScript y Estructuras de Datos</title>
+    <script src="Ejercicio058.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <img src="imagenes/js.png" alt="logo JavaScript" width="100px" height="100px">
+    <h1>Usa lógica condicional con las sentencias "If"</h1>
+    <h2>Ejercicio 58</h2>
+        * Las sentencias if son utilizadas para tomar decisiones en el código. <br>
+        * La palabra clave if le dice a JavaScript que ejecute el código entre llaves bajo ciertas condiciones, definidas en los paréntesis. <br>
+        * Estas condiciones son conocidas como condiciones booleanas (Boolean) y sólo pueden ser true o false.<br>
+        * Cuando la condición se evalúa como true, el programa ejecuta el comando dentro de las llaves. Cuando la condición booleana se evalúa como false, <br>
+        * la sentencia dentro de las llaves no se ejecutará.<br>
+        <span class = "codigoFalso">
+        Pseudocódigo<br>
+        <br>
+            si (la condición es verdadera) {<br>
+            la sentencia es ejecutada<br>
+            }<br>
+            <br>
+        Ejemplo<br>
+
+        function test (myCondition) {<br>
+        if (myCondition) {<br>
+            return "It was true";<br>
+        }<br>
+        return "It was false";<br>
+        }<br>
+        <br>
+        test(true);<br>
+        test(false);<br>
+        </span>
+        <br>
+        test(true) devuelve la cadena It was true y test(false) devuelve la cadena It was false.<br>
+        <br>
+        Cuando test es llamada con un valor de true, la sentencia if evalúa myCondition (mi condición) para ver si es true o no. <br>
+        Puesto que es true, la función devuelve It was true. Cuando llamamos a test con un valor de false, myCondition no es true, <br>
+        la sentencia dentro de las llaves no se ejecuta y la función devuelve It was false.<br>
+        Crea una sentencia if dentro de la función que devuelva Yes, that was true si el parámetro wasThatTrue es true y devuelva No, that was false en caso contrario.<br>
+        <pre>
+        function trueOrFalse(wasThatTrue) {
+            // Cambia solo el código debajo de esta línea
+            if(wasThatTrue){
+                return "Yes, that was true";
+            }
+                return "No, that was false"
+            // Cambia solo el código encima de esta línea
+            
+            }
+        </pre>
+        Pruebas<br>
+        <br>
+        Aprobado: trueOrFalse debe ser una función<br>
+        Aprobado: trueOrFalse(true) debe devolver una cadena<br>
+        Aprobado: trueOrFalse(false) debe devolver una cadena<br>
+        Aprobado: trueOrFalse(true) debe devolver la cadena Yes, that was true<br>
+        Aprobado: trueOrFalse(false) debe devolver la cadena No, that was false<br>
+</body>
+</html>

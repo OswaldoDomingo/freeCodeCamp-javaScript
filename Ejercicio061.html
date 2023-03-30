@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de JavaScript y Estructuras de Datos</title>
+    <link rel="stylesheet" href="estilos.css">
+   
+    <script src="Ejercicio061.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Practica comparando diferentes valores</h1>
+    <h2>Ejercicio 61</h2>
+
+    En los dos últimos desafíos, aprendimos sobre el operador de igualdad (==) y el operador de estricta igualdad (===). <br>
+    Vamos a hacer una rápida revisión y práctica utilizando estos operadores un poco más.<br>
+    Si los valores que se comparan no son del mismo tipo, el operador de igualdad realizará una conversión de tipo y luego evaluará los valores. <br>
+    Sin embargo, el operador de estricta igualdad comparará tanto el tipo de datos como el valor tal como es, sin convertir un tipo a otro.<br>
+    <br>
+    Ejemplos<br>
+    <br>
+    3 == '3' devuelve true porque JavaScript realiza la conversión de tipo de cadena a número. 3 === '3' devuelve false <br>
+    porque los tipos son diferentes y la conversión de tipo no se realiza.<br>
+    <br>
+    Nota: En JavaScript, puedes determinar el tipo de una variable o un valor con el operador typeof, de la siguiente manera:<br>
+    <br>
+    typeof 3<br>
+    typeof '3'<br>
+    <br>
+    typeof 3 devuelve la cadena number y typeof '3' devuelve la cadena string.<br>
+    <br>
+    La función compareEquality en el editor compara dos valores usando el operador de igualdad. <br>
+    Modifica la función para que devuelva la cadena Equal sólo cuando los valores son estrictamente iguales.<br>
+
+    <pre>
+    // Función
+    function compareEquality(a, b) {
+    if (a === b) {
+        return "Equal";
+    }
+    return "Not Equal";
+    }
+
+    compareEquality(10, "10");
+    </pre>
+    Aprobado: compareEquality(10, "10") debe devolver la cadena Not Equal<br>
+    Aprobado: compareEquality("20", 20) debe devolver la cadena Not Equal<br>
+    Aprobado: Debes usar el operador ===<br>
+</body>

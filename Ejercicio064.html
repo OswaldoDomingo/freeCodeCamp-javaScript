@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación con el operador de estricta desigualdad</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio064.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador "mayor que"</h1>
+    <h2>Ejercicio 64</h2>
+    
+    Comparación con el operador "mayor que"<br>
+
+    El operador mayor que (>) compara los valores de dos números. Si el número a la izquierda es mayor que el número a la derecha, devuelve true. De lo contrario, devuelve false.
+
+    Al igual que el operador de igualdad, el operador mayor que convertirá los tipos de datos de valores mientras los compara. <br>
+    <br>
+    Ejemplos <br>  
+    <br>
+    5   >  3  // true <br>
+    7   > '3' // true<br>
+    2   >  3  // false<br>
+    '1' >  9  // false<br>
+    <br>
+    Agrega el operador mayor que a las líneas indicadas para que las declaraciones de devolución tengan sentido.
+    <br>
+    <pre>
+        function testGreaterThan(val) {
+            if (val > 100) { 
+              return "Over 100";
+            }
+          
+            if (val > 10) {
+              return "Over 10";
+            }
+          
+            return "10 or Under";
+          }
+          
+          testGreaterThan(10);
+    </pre>
+     Pruebas <br>
+
+        Aprobado: testGreaterThan(0) debe devolver la cadena 10 or Under<br>
+        Aprobado: testGreaterThan(10) debe devolver la cadena 10 or Under<br>
+        Aprobado: testGreaterThan(11) debe devolver la cadena Over 10<br>
+        Aprobado: testGreaterThan(99) debe devolver la cadena Over 10<br>
+        Aprobado: testGreaterThan(100) debe devolver la cadena Over 10<br>
+        Aprobado: testGreaterThan(101) debe devolver la cadena Over 100<br>
+        Aprobado: testGreaterThan(150) debe devolver la cadena Over 100<br>
+        Aprobado: Debes usar el operador > por lo menos dos veces<br>
+</body>
+</html>

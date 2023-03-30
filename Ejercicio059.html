@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de JavaScript y Estructuras de Datos</title>
+    <script src="Ejercicio059.js"></script>
+</head>
+<body>
+    <h1>Comparación con el operador de igualdad</h1>
+    <code>
+        Hay muchos operadores de comparación en JavaScript. Todos estos operadores devuelven un valor booleano true o false. <br>
+        El operador más básico es el de igualdad ==. 
+        El operador de igualdad compara dos valores y devuelve true si son equivalentes o false si no lo son. <br>
+        Ten en cuenta que una igualdad es diferente a una asignación (=), la cual asigna el valor a la derecha del operador a la variable de la izquierda.<br>
+
+        function equalityTest(myVal) {<br>
+        if (myVal == 10) {<br>
+            return "Equal";<br>
+        }<br>
+        return "Not Equal";<br>
+        }<br>
+        <br>
+        Si myVal es igual a 10, el operador de igualdad devuelve true, así que el código dentro de los corchetes se ejecutará y la función devolverá Equal. <br>
+        De lo contrario, la función devolverá Not Equal. Para que JavaScript compare dos tipos de datos diferentes (por ejemplo, numbers y strings), <br>
+        tiene que convertir un tipo a otro. Esto se conoce como coerción de Tipo. Sin embargo, una vez lo hace, puede comparar términos como se ve a continuación:<br>
+        <br>
+        1   ==  1  // true<br>
+        1   ==  2  // false<br>
+        1   == '1' // true<br>
+        "3" ==  3  // true<br>
+        <br>
+        Agrega el operador de igualdad a la línea indicada para que la función devuelva la cadena Equal cuando val sea equivalente a 12.<br>
+</code>
+
+
+</body>
+</html>

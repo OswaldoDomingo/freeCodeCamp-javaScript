@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación con el operador "menor o igual que"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio067.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador "menor o igual que"</h1>
+    <h2>Ejercicio 67</h2>
+    Comparación con el operador "menor o igual que" <br>
+
+    El operador menor o igual que (<=) compara el valor de dos números. <br>
+    Si el número de la izquierda es menor o igual que el número de la derecha, devuelve true. <br>
+    Si el número a la izquierda es mayor que el número a la derecha, devuelve false. <br>
+    Al igual que el operador de igualdad, el operador menor o igual que convertirá los tipos de datos mientras los compara.<br>
+    <br>
+    Ejemplos<br>
+    <br>
+    4   <= 5 // true<br>
+    '7' <= 7 // true<br>
+    5   <= 5 // true<br>
+    3   <= 2 // false<br>
+    '8' <= 4 // false<br>
+    <br>
+    Agrega el operador menor o igual que a las líneas indicadas para que el valor devuelto tenga sentido.
+
+    <pre>
+        function testLessOrEqual(val) {
+            if (val <= 12) {
+              return "Smaller Than or Equal to 12";
+            }
+          
+            if (val <= 24) {
+              return "Smaller Than or Equal to 24";
+            }
+          
+            return "More Than 24";
+          }
+          
+          testLessOrEqual(10);
+    </pre>
+    Pruebas
+    <br>
+    Aprobado: testLessOrEqual(0) debe devolver la cadena Smaller Than or Equal to 12  <br>
+    Aprobado: testLessOrEqual(11) debe devolver la cadena Smaller Than or Equal to 12 <br>
+    Aprobado: testLessOrEqual(12) debe devolver la cadena Smaller Than or Equal to 12 <br>
+    Aprobado: testLessOrEqual(23) debe devolver la cadena Smaller Than or Equal to 24 <br>
+    Aprobado: testLessOrEqual(24) debe devolver la cadena Smaller Than or Equal to 24 <br>
+    Aprobado: testLessOrEqual(25) debe devolver la cadena More Than 24 <br>
+    Aprobado: testLessOrEqual(55) debe devolver la cadena More Than 24 <br>
+    Aprobado: Debes utilizar el operador <= al menos dos veces
+</body>
+</html>

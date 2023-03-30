@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de JavaScript y Estructuras de Datos</title>
+    <link rel="stylesheet" href="estilos.css">
+   
+    <script src="Ejercicio060.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador de estricta igualdad</h1>
+    
+        La estricta igualdad (===) es la contraparte del operador de igualdad (==). <br>
+        Sin embargo, a diferencia del operador de igualdad, el cual intenta convertir ambos valores comparados a un tipo común, <br>
+        el operador de estricta igualdad no realiza una conversión de tipo.<br>
+        Si los valores que se comparan tienen diferentes tipos, se consideran desiguales, y el operador de estricta igualdad devolverá falso.<br>
+        <br>
+        Ejemplos<br>
+        <br>
+        3 ===  3  // true<br>
+        3 === '3' // false<br>
+        <br>
+        En el segundo ejemplo, 3 es de tipo Number (número) y '3' es de tipo String (cadena).<br>
+        Usa el operador de estricta igualdad en la sentencia if para que la función devuelva la cadena Equal cuando val sea estrictamente igual a 7.<br>
+        <br>
+    <pre>
+    function testStrict(val) {
+        if (val === 7) { 
+            return "Equal";
+        }
+        return "Not Equal";
+        }
+        testStrict(10);
+    </pre>
+        Pruebas<br>
+        <br>
+        Aprobado: testStrict(10) debe devolver la cadena Not Equal<br>
+        Aprobado: testStrict(7) debe devolver la cadena Equal<br>
+        Aprobado: testStrict("7") debe devolver la cadena Not Equal<br>
+        Aprobado: Debes usar el operador ===<br>
+</body>
+</html>

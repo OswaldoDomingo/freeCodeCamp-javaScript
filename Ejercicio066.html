@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación con el operador "menor que"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio066.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Comparación con el operador "menor que"</h1>
+    <h2>Ejercicio 66</h2>
+
+    El operador menor que (<) compara los valores de dos números. Si el número a la izquierda es menor que el número a la derecha, devuelve true. <br>
+    De lo contrario, devuelve false. <br>
+    Al igual que el operador de igualdad, el operador menor que convertirá los tipos de datos mientras los compara. <br>
+    <br>
+    Ejemplos
+    <br>
+    2   < 5 // true  <br>
+    '3' < 7 // true <br>
+    5   < 5 // false <br>
+    3   < 2 // false <br>
+    '8' < 4 // false <br>
+    <br>
+    Agrega el operador menor que a las líneas indicadas para que las declaraciones de devolución tengan sentido.
+    <pre>
+        function testLessThan(val) {
+            if (val < 25) {  
+              return "Under 25";
+            }
+          
+            if (val < 55) {  
+              return "Under 55";
+            }
+          
+            return "55 or Over";
+          }
+          
+          testLessThan(10);
+        
+    </pre>
+    Pruebas
+    <br>
+    Aprobado: testLessThan(0) debe devolver la cadena Under 25 <br>
+    Aprobado: testLessThan(24) debe devolver la cadena Under 25 <br>
+    Aprobado: testLessThan(25) debe devolver la cadena Under 55 <br>
+    Aprobado: testLessThan(54) debe devolver la cadena Under 55 <br>
+    Aprobado: testLessThan(55) debe devolver la cadena 55 or Over <br>
+    Aprobado: testLessThan(99) debe devolver la cadena 55 or Over <br>
+    Aprobado: Debes usar el operador < por lo menos dos veces        
+</body>
+</html>
