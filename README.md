@@ -69,9 +69,9 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 65	-	Comparación con el operador de estricta desigualdad <br>
 66	-	Comparación con el operador "mayor que" <br>
 67	-	Comparación con el operador "mayor o igual que" <br>
-<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio066.html">68	-	Comparación con el operador "menor que"</a> <br>
-<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio067.html">69	-	Comparación con el operador "menor o igual que"</a> <br>
-<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio068.html">70	-	Comparaciones con el operador lógico "and"</a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio066.html">68	-	Comparación con el operador "menor que"</a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio067.html">69	-	Comparación con el operador "menor o igual que"</a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio068.html">70	-	Comparaciones con el operador lógico "and"</a> <br>
 71	-	Comparaciones con el operador lógico "or" <br>
 72	-	Introducción a las sentencias "Else" <br>
 73	-	Introducción a las sentencias "Else If" <br>
