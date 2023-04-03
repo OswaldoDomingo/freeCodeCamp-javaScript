@@ -72,10 +72,10 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio066.html">68	-	Comparación con el operador "menor que"</a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio067.html">69	-	Comparación con el operador "menor o igual que"</a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio068.html">70	-	Comparaciones con el operador lógico "and"</a> <br>
-<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio068.html">71	-	Comparaciones con el operador lógico "or"</a> <br>
-72	-	Introducción a las sentencias "Else" <br>
-73	-	Introducción a las sentencias "Else If" <br>
-74	-	Orden lógico de las sentencias "if else" <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio071.html">71	-	Comparaciones con el operador lógico "or"</a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio072.html">72	-	Introducción a las sentencias "Else"</a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio073.html">73	-	Introducción a las sentencias "Else If" </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio074.html">74	-	Orden lógico de las sentencias "if else" </a><br>
 75	-	Encadena sentencias if else <br>
 76	-	Código de golf <br>
 77	-	Seleccionando entre muchas opciones con declaración switch <br>
