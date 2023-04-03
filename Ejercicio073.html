@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a las sentencias "Else If"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio073.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Introducción a las sentencias "Else If"</h1>
+    <h2>Ejercicio 73</h2>
+    Introducción a las sentencias "Else If" <br>
+    Si tienes múltiples condiciones que necesitan ser resueltas, puedes encadenar sentencias if junto con sentencias else if. <br>
+    <br>
+    if (num > 15) {<br>
+    return "Bigger than 15";<br>
+    } else if (num < 5) {<br>
+    return "Menor que 5";<br>
+    } else {<br>
+    return "Between 5 and 15";<br>
+    }<br>
+    <br>
+    Transforma la lógica para utilizar la sentencia else if.<br>
+    
+
+    <pre class="codigoFalso">
+    Código original.
+    function testElseIf(val) {
+        if (val > 10) {
+            return "Mayor que 10";
+        }
+        
+        if (val < 5) {
+            return "Menor que 5";
+        }
+        
+        return "Entre 5 y 10";
+        }
+        
+        testElseIf(7);
+    </pre>
+    <pre>
+        Código resuelto
+    function testElseIf(val) {
+        if (val > 10) {
+            return "Mayor que 10";
+        }
+        else if (val < 5) {
+            return "Menor que 5";
+        } 
+        else {
+            return "Entre 5 y 10";
+        }  
+        }
+        
+        testElseIf(7);
+    </pre>
+    Pruebas <br>
+    Aprobado: Debes tener al menos dos sentencias else <br>
+    Aprobado: Debes tener al menos dos sentencias if<br>
+    Aprobado: Debes utilizar llaves de apertura y cierre para cada bloque de código if else.<br>
+    Aprobado: testElseIf(0) debe devolver la cadena Menor que 5<br>
+    Aprobado: testElseIf(5) debe devolver la cadena Entre 5 y 10<br>
+    Aprobado: testElseIf(7) debe devolver la cadena Entre 5 y 10<br>
+    Aprobado: testElseIf(10) debe devolver la cadena Entre 5 y 10<br>
+    Aprobado: testElseIf(12) debe devolver la cadena Mayor que 10
+</body>
+</html>

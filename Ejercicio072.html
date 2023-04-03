@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a las sentencias "Else"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio072.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Introducción a las sentencias "Else"</h1>
+    <h2>Ejercicio 72</h2>
+        Cuando la condición en una sentencia if es verdadera, se ejecutará el bloque de código que va a continuación. <br>
+        ¿Qué sucede cuando la condición es falsa? Normalmente no debería ocurrir nada. Con la sentencia else, se puede ejecutar un bloque alternativo de código. <br>
+        <br>
+        if (num > 10) { <br>
+        return "Bigger than 10"; <br>
+        } else { <br>
+        return "10 or Less"; <br>
+        } <br>
+    <br>
+    Combina la sentencia if en una sola sentencia if/else. <br>
+
+    <pre class="codigoFalso">
+        Código original.
+    function testElse(val) {
+        let result = "";
+        // Cambia solo el código debajo de esta línea
+        
+        if (val > 5) {
+            result = "Bigger than 5";
+        }
+        
+        if (val <= 5) {
+            result = "5 or Smaller";
+        }
+        
+        // Cambia solo el código encima de esta línea
+        return result;
+        }
+        
+        testElse(4);
+    </pre>
+    <pre>
+        Código resuelto
+    function testElse(val) {
+        let result = "";
+        
+        if (val > 5) {
+            result = "Bigger than 5";
+        } else {
+            result = "5 or Smaller";
+        }
+        return result;
+        }
+        
+        testElse(4);
+    </pre>
+    Pruebas <br>
+    Aprobado: Sólo debes tener una sentencia if en el editor <br>
+    Aprobado: Debes usar una sentencia else<br>
+    Aprobado: testElse(4) debe devolver la cadena 5 or Smaller<br>
+    Aprobado: testElse(5) debe devolver la cadena 5 or Smaller<br>
+    Aprobado: testElse(6) debe devolver la cadena Bigger than 5<br>
+    Aprobado: testElse(10) debe devolver la cadena Bigger than 5<br>
+    Aprobado: No debes cambiar el código por encima o por debajo de los comentarios especificados.
+</body>
+</html>
