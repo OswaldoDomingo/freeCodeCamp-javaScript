@@ -76,7 +76,7 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio072.html">72	-	Introducción a las sentencias "Else"</a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio073.html">73	-	Introducción a las sentencias "Else If" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio074.html">74	-	Orden lógico de las sentencias "if else" </a><br>
-75	-	Encadena sentencias if else <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio075.html">75	-	Encadena sentencias "if else" </a><br>
 76	-	Código de golf <br>
 77	-	Seleccionando entre muchas opciones con declaración switch <br>
 78	-	Agrega una opción predeterminada en las declaraciones switch <br>
