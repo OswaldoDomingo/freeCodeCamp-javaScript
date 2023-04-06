@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encadena sentencias if else"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio075.js"></script>
+</head>
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Encadena sentencias if else</h1>
+    <h2>Ejercicio 75</h2>
+    <!-- Propuesta de ejercicio -->
+    Encadena sentencias if else <br>
+    
+    Las sentencias if/else pueden ser encadenadas para crear una lógica compleja. Aquí hay pseudocódigo de múltiples declaraciones if / else if encadenadas: <br>
+   
+    <br>
+    <!-- Código de ejemplo -->
+    <pre class="codigoFalso">
+        Ejemplo
+    if (condition1) {
+        statement1
+        } else if (condition2) {
+        statement2
+        } else if (condition3) {
+        statement3
+        . . .
+        } else {
+        statementN
+        }
+    </pre>
+
+    Escribe sentencias if / else if encadenadas para cumplir con las siguientes condiciones: <br>
+    <br>
+    num < 5 - devuelve Tiny<br>
+    num < 10 - devuelve Small<br>
+    num < 15 - devuelve Medium<br>
+    num < 20 - devuelve Large<br>
+    num >= 20 - devuelve Huge<br>
+
+    <!-- Pie de la página donde te explica lo que vas a hacer -->
+    <br>    
+
+    <pre class="codigoFalso">
+    Código original.
+    function testSize(num) {
+        // Cambia solo el código debajo de esta línea
+      
+      
+        return "Change Me";
+        // Cambia solo el código encima de esta línea
+      }
+      
+      testSize(7);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function testSize(num) {
+        // Cambia solo el código debajo de esta línea
+        if(num < 5){
+            return "Tiny";
+        } else if(num < 10){
+            return "Small";
+        } else if(num < 15){
+            return "Medium";
+        } else if(num < 20){
+            return "Large";
+        } else if(num >= 20){
+            return "Huge"
+        } else {
+            return "Change Me";
+        }
+        // Cambia solo el código encima de esta línea
+      }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes tener al menos cuatro sentencias else <br>
+    Aprobado: Debes tener al menos cuatro sentencias if <br>
+    Aprobado: Debes tener al menos una sentencia return <br>
+    Aprobado: testSize(0) debe devolver la cadena Tiny <br>
+    Aprobado: testSize(4) debe devolver la cadena Tiny <br>
+    Aprobado: testSize(5)debe devolver la cadena Small <br>
+    Aprobado: testSize(8) debe devolver la cadena Small <br>
+    Aprobado: testSize(10) debe devolver la cadena Medium <br>
+    Aprobado: testSize(14) debe devolver la cadena Medium <br>
+    Aprobado: testSize(15) debe devolver la cadena Large <br>
+    Aprobado: testSize(17) debe devolver la cadena Large <br>
+    Aprobado: testSize(20) debe devolver la cadena Huge <br>
+    Aprobado: testSize(25) debe devolver la cadena Huge
+</body>
+</html>
