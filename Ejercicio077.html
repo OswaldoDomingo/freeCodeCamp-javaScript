@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionando entre muchas opciones con declaración switch"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio077.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Seleccionando entre muchas opciones con declaración switch</h1>
+    <h2>Ejercicio 77</h2>
+    <!-- Propuesta de ejercicio -->
+    Seleccionando entre muchas opciones con declaración switch <br>
+
+
+
+
+
+    Si tienes muchas opciones para elegir, usa una declaración switch. Una sentencia switch prueba un valor y puede
+    tener muchas sentencias case que definen varios valores posibles. Las sentencias se ejecutan desde el primer valor
+    case coincidente hasta que se encuentra un break.
+    <br>
+    Aquí hay un ejemplo de una declaración switch:
+    <br>
+    <pre class="codigoFalso">
+    switch (fruit) {
+        case "apple":
+          console.log("The fruit is an apple");
+          break;
+        case "orange":
+          console.log("The fruit is an orange");
+          break;
+      }
+</pre>
+    <br>
+    Los valores en las sentencias case se prueban con igualdad estricta (===). El break le dice a JavaScript que deje de
+    ejecutar declaraciones. Si se omite break, se ejecutara la siguiente sentencia.
+    <br>
+    Escribe una declaración switch que pruebe val y establezca answer con las siguientes condiciones: <br>
+    1 - alpha <br>
+    2 - beta <br>
+    3 - gamma <br>
+    4 - delta
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    function caseInSwitch(val) {
+        let answer = "";
+        // Cambia solo el código debajo de esta línea
+      
+      
+      
+        // Cambia solo el código encima de esta línea
+        return answer;
+      }
+      
+      caseInSwitch(1);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function caseInSwitch(val) {
+        let answer = "";
+      switch(val){
+        case 1:
+        answer = "alpha";
+        break;
+        case 2:
+         answer = "beta";
+        break;
+        case 3:
+         answer = "gamma";
+        break;
+        case 4:
+         answer = "delta";
+      }
+        return answer;
+      }
+      
+      caseInSwitch(1);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: caseInSwitch(1) debe tener una cadena con valor alpha <br>
+    Aprobado: caseInSwitch(2) debe tener una cadena con valor beta <br>
+    Aprobado: caseInSwitch(3) debe tener una cadena con valor gamma <br>
+    Aprobado: caseInSwitch(4) debe tener una cadena con valor delta <br>
+    Aprobado: No debes usar ninguna sentencia if o else <br>
+    Aprobado: Debes tener al menos 3 declaraciones break
+</body>
+
+</html>

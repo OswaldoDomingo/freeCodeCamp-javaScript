@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encadena sentencias if else"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio076.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Código de golf</h1>
+    <h2>Ejercicio 76</h2>
+    <!-- Propuesta de ejercicio -->
+    Código de golf <br>
+
+
+
+    En el juego de Golf, cada agujero tiene un par, que significa, el número promedio de strokes que se espera que haga
+    un golfista para hundir la pelota en el agujero para completar el juego. Dependiendo de qué tan por encima o por
+    debajo del par estén tus strokes, hay un nombre diferente.
+
+    Tu función recibirá los argumentos par y strokes. Devuelve la cadena correcta según esta tabla que muestra los
+    golpes en orden de prioridad; superior (más alto) a inferior (más bajo): <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Strokes (golpes)</th>
+                <th>Devuelve</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>"Hole-in-one!"</td>
+            </tr>
+            <tr>
+                <td>&lt;= par - 2</td>
+                <td>"Eagle"</td>
+            </tr>
+            <tr>
+                <td>par - 1</td>
+                <td>"Birdie"</td>
+            </tr>
+            <tr>
+                <td>par</td>
+                <td>"Par"</td>
+            </tr>
+            <tr>
+                <td>par + 1</td>
+                <td>"Bogey"</td>
+            </tr>
+            <tr>
+                <td>par + 2</td>
+                <td>"Double Bogey"</td>
+            </tr>
+            <tr>
+                <td>&gt;= par + 3</td>
+                <td>"Go Home!"</td>
+            </tr>
+        </tbody>
+    </table>
+    par y strokes siempre serán numéricos y positivos. Hemos añadido un arreglo de todos los nombres para tu
+    conveniencia. <br>
+
+
+    <pre class="codigoFalso">
+    Código original.
+    const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Cambia solo el código debajo de esta línea
+
+
+  return "Change Me";
+  // Cambia solo el código encima de esta línea
+}
+
+golfScore(5, 4);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+    function golfScore(par, strokes) {
+    // Cambia solo el código debajo de esta línea
+    if(strokes == 1){
+        return names[0];
+    } else if(strokes == 2){
+        return names[1];
+    }else if(strokes == 3){
+        return names[2];
+    }else if(strokes == 4){
+        return names[3];
+    }else if(strokes == 5 && par == 4){
+        return names[4];
+    }else if(strokes == 5){
+        return names[3];
+    }else if(strokes == 6){
+        return names[5];
+    }else if(strokes == 7){
+        return names[6];
+    }else if(strokes == 9){
+        return names[6];
+    }
+
+
+  return "Change Me";
+  // Cambia solo el código encima de esta línea
+}
+
+golfScore(5, 4);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: golfScore(4, 1) debe devolver la cadena Hole-in-one! <br>
+    Aprobado: golfScore(4, 2) debe devolver la cadena Eagle <br>
+    Aprobado: golfScore(5, 2) debe devolver la cadena Eagle <br>
+    Aprobado: golfScore(4, 3) debe devolver la cadena Birdie <br>
+    Aprobado: golfScore(4, 4) debe devolver la cadena Par <br>
+    Aprobado: golfScore(1, 1) debe devolver la cadena Hole-in-one! <br>
+    Aprobado: golfScore(5, 5) debe devolver la cadena Par <br>
+    Aprobado: golfScore(4, 5) debe devolver la cadena Bogey <br>
+    Aprobado: golfScore(4, 6) debe devolver la cadena Double Bogey <br>
+    Aprobado: golfScore(4, 7) debe devolver la cadena Go Home! <br>
+    Aprobado: golfScore(5, 9) debe devolver la cadena Go Home! <br>
+</body>
+
+</html>

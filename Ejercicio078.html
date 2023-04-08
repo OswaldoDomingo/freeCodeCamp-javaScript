@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrega una opción predeterminada en las declaraciones switch"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio078.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Agrega una opción predeterminada en las declaraciones switch</h1>
+    <h2>Ejercicio 78</h2>
+    <!-- Propuesta de ejercicio -->
+    En una declaración switch puede que no seas capaz de especificar todos los valores posibles como declaraciones de case (caso). 
+    <br>
+    En su lugar, se puede añadir la declaración default, la cual se ejecutará si no se encuentran declaraciones case. Piensa en ella como la última sentencia else en una cadena if/else.
+    <br>
+    Una declaración default debe ser el último caso.
+    <br>
+    <pre class="codigoFalso">
+    switch (num) {
+        case value1:
+            statement1;
+            break;
+        case value2:
+            statement2;
+            break;
+        ...
+        default:
+            defaultStatement;
+            break;
+        }
+          
+    </pre>
+    <br>
+
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    function switchOfStuff(val) {
+        let answer = "";
+        // Cambia solo el código debajo de esta línea
+      
+      
+      
+        // Cambia solo el código encima de esta línea
+        return answer;
+      }
+      
+      switchOfStuff(1);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function switchOfStuff(val) {
+        let answer = "";
+        switch(val){
+          case "a":
+          answer = "apple"
+          break;
+          case "b":
+          answer = "bird"
+          break;
+          case "c":
+          answer = "cat"
+          break;
+          default:
+          answer = "stuff"
+        }
+        return answer;
+      }
+      
+      switchOfStuff(1);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: switchOfStuff("a") debe devolver la cadena apple <br>
+    Aprobado: switchOfStuff("b") debe devolver la cadena bird <br>
+    Aprobado: switchOfStuff("c") debe devolver la cadena cat <br>
+    Aprobado: switchOfStuff("d") debe devolver la cadena stuff <br>
+    Aprobado: switchOfStuff(4) debe devolver la cadena stuff <br>
+    Aprobado: No debes usar ninguna sentencia if o else <br>
+    Aprobado: Debes utilizar una declaración default <br>
+    Aprobado: Debes tener al menos 3 declaraciones de ruptura (break)
+</body>
+
+</html>
