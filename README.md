@@ -77,9 +77,9 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio073.html">73	-	Introducción a las sentencias "Else If" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio074.html">74	-	Orden lógico de las sentencias "if else" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio075.html">75	-	Encadena sentencias "if else" </a><br>
-76	-	Código de golf <br>
-77	-	Seleccionando entre muchas opciones con declaración switch <br>
-78	-	Agrega una opción predeterminada en las declaraciones switch <br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio076.html">76	-	Código de golf </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio077.html">77	-	Seleccionando entre muchas opciones con declaración switch </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio078.html">78	-	Agrega una opción predeterminada en las declaraciones switch </a> <br>
 79	-	Múltiples opciones idénticas en las declaraciones "switch" <br>
 80	-	Reemplazando cadenas de "If Else" por "Switch" <br>
 81	-	Devuelve valores booleanos desde funciones <br>
