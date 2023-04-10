@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construye objetos en JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio084.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Construye objetos en JavaScript</h1>
+    <h2>Ejercicio 84</h2>
+    <!-- Propuesta de ejercicio -->
+    Es posible que hayas escuchado el término objeto (object) antes. <br>
+
+    Los objetos son similares a los arreglos (arrays), excepto que en lugar de usar índices para acceder y modificar sus datos, accedes a los datos en objetos a través de propiedades (properties). <br>
+    
+    Los objetos son útiles para almacenar datos de forma estructurada y pueden representar objetos del mundo real, como un gato. <br>
+    
+    Por ejemplo, aquí hay un objeto de gato: <br>
+
+    <pre class="codigoFalso">
+    const cat = {
+        "name": "Whiskers",
+        "legs": 4,
+        "tails": 1,
+        "enemies": ["Water", "Dogs"]
+        };          
+    </pre>
+    <br>
+    En este ejemplo, todas las propiedades se almacenan como cadenas, como name, legs y tails. Sin embargo, también puedes utilizar números como propiedades. Incluso puedes omitir las comillas para las propiedades de cadenas de una sola palabra, de la siguiente manera:
+    <br>
+    
+    <pre class="codigoFalso">
+    const anotherObject = {
+        make: "Ford",
+        5: "five",
+        "model": "focus"
+        };        
+    </pre>
+    <br>
+    Sin embargo, si tu objeto tiene propiedades que no son cadenas, JavaScript las convertirá automáticamente en cadenas.
+    <br>
+    <hr>
+    Crea un objeto que represente a un perro llamado myDog que contenga las propiedades name (una cadena), legs, tails y friends.
+    <br>
+    Puedes establecer estas propiedades del objeto a los valores que quieras, siempre y cuando name sea una cadena, legs y tails sean números, y friends sea un arreglo.
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    const myDog = {
+        // Cambia solo el código debajo de esta línea
+      
+      
+        // Cambia solo el código encima de esta línea
+    };
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myDog = {
+        name : "Perro",
+        legs : 4,
+        tails : 1,
+        friends : ["Perros", "Gatos"]
+      };
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: myDog debe contener la propiedad name y debe ser una cadena (string). <br>
+    Aprobado: myDog debe contener la propiedad legs y debe ser un número (number). <br>
+    Aprobado: myDog debe contener la propiedad tails y debe ser un número (number). <br>
+    Aprobado: myDog debe contener la propiedad friends y debe ser un arreglo (array). <br>
+    Aprobado: myDog sólo debe contener todas las propiedades dadas.
+</body>
+
+</html>

@@ -80,12 +80,12 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio076.html">76	-	Código de golf </a><br>
 <a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio077.html">77	-	Seleccionando entre muchas opciones con declaración switch </a><br>
 <a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio078.html">78	-	Agrega una opción predeterminada en las declaraciones switch </a> <br>
-79	-	Múltiples opciones idénticas en las declaraciones "switch" <br>
-80	-	Reemplazando cadenas de "If Else" por "Switch" <br>
-81	-	Devuelve valores booleanos desde funciones <br>
-82	-	Patrón de devolución anticipado para funciones <br>
-83	-	Conteo de cartas <br>
-84	-	Construye objetos en JavaScript <br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio079.html">79	-	Múltiples opciones idénticas en las declaraciones "switch" </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio080.html">80	-	Reemplazando cadenas de "If Else" por "Switch" </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio081.html">81	-	Devuelve valores booleanos desde funciones </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio082.html">82	-	Patrón de devolución anticipado para funciones </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio083.html">83	-	Conteo de cartas </a><br>
+<a href="https://github.com/oswaldomingo/freeCodeCamp-javaScript/blob/main/Ejercicio084.html">84	-	Construye objetos en JavaScript </a><br>
 85	-	Accede a propiedades de objetos con notación de puntos <br>
 86	-	Accede a propiedades de objetos con notación de corchete <br>
 87	-	Accede a propiedades de objetos con variables <br>
@@ -115,6 +115,3 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 111	-	Usa el operador condicional (ternario) <br>
 112	-	Usa múltiples operadores condicionales (ternarios) <br>
 113	-	Utiliza recursión para crear una cuenta regresiva <br>
-
-
- 

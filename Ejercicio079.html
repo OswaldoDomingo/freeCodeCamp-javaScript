@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiples opciones idénticas en las declaraciones "switch""</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio079.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Múltiples opciones idénticas en las declaraciones "switch"</h1>
+    <h2>Ejercicio 79</h2>
+    <!-- Propuesta de ejercicio -->
+Si la sentencia break es omitida en un caso (case) de una sentencia switch, las siguientes sentencias case serán ejecutadas hasta encontrar un break. <br>
+Si tienes múltiples entradas con la misma salida, puedes representarlas en una sentencia switch como esta: <br>
+Los casos 1, 2 y 3 producirán el mismo resultado.
+<br>
+    <pre class="codigoFalso">
+    let result = "";
+    switch (val) {
+    case 1:
+    case 2:
+    case 3:
+        result = "1, 2, or 3";
+        break;
+    case 4:
+        result = "4 alone";
+}
+    </pre>
+    <br>
+    Los casos 1, 2 y 3 producirán el mismo resultado.
+    <br>
+
+    Escribe una declaración switch para establecer answer con los siguientes rangos: <br>
+    1-3 - Low <br>
+    4-6 - Mid <br>
+    7-9 - High <br>
+    
+    Nota: Necesitarás tener un case para cada número dentro del rango. <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    function sequentialSizes(val) {
+        let answer = "";
+        // Cambia solo el código debajo de esta línea
+      
+      
+      
+        // Cambia solo el código encima de esta línea
+        return answer;
+      }
+      
+      sequentialSizes(1);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function sequentialSizes(val) {
+        let answer = "";
+        switch(val){
+            case 1:
+            case 2:
+            case 3:
+                answer = "Low"
+                break;
+            case 4:
+            case 5:
+            case 6:
+                answer = "Mid"
+                break;
+                case 7:
+                case 8:
+                case 9:
+                    answer = "High"
+        }
+        return answer;
+      }
+      
+      sequentialSizes(1);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: sequentialSizes(1) debe devolver la cadena Low <br>
+    Aprobado: sequentialSizes(2) debe devolver la cadena Low <br>
+    Aprobado: sequentialSizes(3) debe devolver la cadena Low <br>
+    Aprobado: sequentialSizes(4) debe devolver la cadena Mid <br>
+    Aprobado: sequentialSizes(5) debe devolver la cadena Mid <br>
+    Aprobado: sequentialSizes(6) debe devolver la cadena Mid <br>
+    Aprobado: sequentialSizes(7) debe devolver la cadena High <br>
+    Aprobado: sequentialSizes(8) debe devolver la cadena High <br>
+    Aprobado: sequentialSizes(9) debe devolver la cadena High <br>
+    Aprobado: No debes utilizar las sentencias if o else <br>
+    Aprobado: Debes tener nueve sentencias case
+</body>
+
+</html>

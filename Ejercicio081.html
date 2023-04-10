@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devuelve valores booleanos desde funciones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio081.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Devuelve valores booleanos desde funciones</h1>
+    <h2>Ejercicio 81</h2>
+    <!-- Propuesta de ejercicio -->
+    Puede recordar de la comparación con el operador de igualdad que todos los operadores de comparación devuelven un valor booleano true o false.
+    <br>
+    A veces la gente usa una sentencia if/else para hacer una comparación, como esta:
+<br>
+    <pre class="codigoFalso">
+    function isEqual(a, b) {
+        if (a === b) {
+            return true;
+        } else {
+            return false;
+        }
+        }
+          
+          
+    </pre>
+    <br>
+    Pero hay una mejor manera de hacer esto. Puesto que === devuelve true o false, podemos devolver el resultado de la comparación:
+    <br>
+    <pre class="codigoFalso">
+    function isEqual(a, b) {
+        return a === b;
+        } 
+    </pre>
+    <br>
+    Corrige la función isLess para eliminar las sentencias if/else.
+    <br>
+   <pre class="codigoFalso">
+    Código original.
+    function isLess(a, b) {
+        // Cambia solo el código debajo de esta línea
+        if (a < b) {
+          return true;
+        } else {
+          return false;
+        }
+        // Cambia solo el código encima de esta línea
+      }
+      
+      isLess(10, 15);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function isLess(a, b) {
+        return a < b;
+      }
+      
+      isLess(10, 15);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: isLess(10, 15) debe devolver true <br>
+    Aprobado: isLess(15, 10) debe devolver false <br>
+    Aprobado: No debes utilizar las sentencias if o else
+    </body>
+
+</html>

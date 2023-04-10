@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón de devolución anticipado para funciones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio082.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Patrón de devolución anticipado para funciones</h1>
+    <h2>Ejercicio 82</h2>
+    <!-- Propuesta de ejercicio -->
+    Cuando se alcanza una sentencia return, la ejecución de la función actual se detiene y el control se devuelve a la ubicación de la llamada.
+    <br>
+    Ejemplo
+<br>
+    <pre class="codigoFalso">
+        function myFun() {
+            console.log("Hello");
+            return "World";
+            console.log("byebye")
+          }
+          myFun();          
+    </pre>
+    <br>
+    Lo anterior mostrará la cadena Hello en la consola y devolverá la cadena World. 
+    La cadena byebye nunca se mostrará en la consola, porque la función termina en la sentencia return.
+    <br>
+    Modifica la función abTest para que cuando a o b sean menores que 0 la función salga inmediatamente con un valor undefined.
+    <br>
+    Pista
+    <br>
+    Recuerda que <a  href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables">undefined es una palabra clave</a>, no una cadena.
+    <br>
+   <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    function abTest(a, b) {
+    // Cambia solo el código debajo de esta línea
+
+
+
+    // Cambia solo el código encima de esta línea
+
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+    }
+
+    abTest(2,2);
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function abTest(a, b) {
+        if(a < 0 || b < 0){
+          return undefined;
+        }
+        return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+      }
+      
+      abTest(2,2);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: abTest(2, 2) debe devolver un número <br>
+    Aprobado: abTest(2, 2) debe devolver 8 <br>
+    Aprobado: abTest(-2, 2) debe devolver undefined <br>
+    Aprobado: abTest(2, -2) debe devolver undefined <br>
+    Aprobado: abTest(2, 8) debe devolver 18 <br>
+    Aprobado: abTest(3, 3) debe devolver 12 <br>
+    Aprobado: abTest(0, 0) debe devolver 0 <br>
+    </body>
+
+</html>
