@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accede a propiedades de objetos con variables</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio087.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Accede a propiedades de objetos con variables</h1>
+    <h2>Ejercicio 87</h2>
+    <!-- Propuesta de ejercicio -->
+    Otro uso de la notación de corchetes en objetos es acceder a una propiedad que está almacenada como el valor de una variable. Esto puede ser muy útil para iterar a través de las propiedades de un objeto o para acceder a una tabla de búsqueda.
+<br>
+    Aquí hay un ejemplo del uso de una variable para acceder a una propiedad:
+    <br>
+
+    <pre class="codigoFalso">
+        const dogs = {
+            Fido: "Mutt",
+            Hunter: "Doberman",
+            Snoopie: "Beagle"
+          };
+          
+          const myDog = "Hunter";
+          const myBreed = dogs[myDog];
+          console.log(myBreed);
+          
+    </pre>
+    <br>
+    La cadena Doberman se mostrará en la consola.
+    <br>
+    Ten en cuenta que no utilizamos comillas alrededor del nombre de la variable cuando la usamos para acceder a la propiedad porque utilizamos el valor de la variable, no el nombre.
+    <hr>
+    Ejercicio: <br>
+    Asigna la variable playerNumber a 16. Luego, usa la variable para buscar el nombre del jugador y asignarlo a player.
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+        const testObj = {
+            12: "Namath",
+            16: "Montana",
+            19: "Unitas"
+        };
+        // Cambia solo el código debajo de esta línea
+        const playerNumber = 42;  // Cambia esta línea
+        const player = testObj;   // Cambia esta línea
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const testObj = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas"
+      };
+      
+      const playerNumber = 16; 
+      const player = testObj[playerNumber]; 
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>   
+    Aprobado: playerNumber debe ser un número <br>
+    Aprobado: La variable player debe ser una cadena <br>
+    Aprobado: El valor de player debe ser la cadena Montana <br>
+    Aprobado: Debes usar la notación de corchetes para acceder a testObj <br>
+    Aprobado: No debes asignar el valor de Montana a la variable player directamente. <br>
+    Aprobado: Debes usar la variable playerNumber en tu notación de corchetes
+
+</body>
+
+</html>

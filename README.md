@@ -84,12 +84,12 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio080.html">80	-	Reemplazando cadenas de "If Else" por "Switch" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio081.html">81	-	Devuelve valores booleanos desde funciones </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio082.html">82	-	Patrón de devolución anticipado para funciones </a><br>
-<a href="https://github.com/OswaldoDomingo/freeCodeCamp-javaScript/blob/main/Ejercicio083.html">83	-	Conteo de cartas </a><br>
-<a href="https://github.com/OswaldoDomingo/freeCodeCamp-javaScript/blob/main/Ejercicio084.html">84	-	Construye objetos en JavaScript </a><br>
-85	-	Accede a propiedades de objetos con notación de puntos <br>
-86	-	Accede a propiedades de objetos con notación de corchete <br>
-87	-	Accede a propiedades de objetos con variables <br>
-88	-	Actualizando las propiedades de un objeto <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio083.html">83	-	Conteo de cartas </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio084.html">84	-	Construye objetos en JavaScript </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio085.html">85	-	Accede a propiedades de objetos con notación de puntos </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio086.html">86	-	Accede a propiedades de objetos con notación de corchete </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio087.html">87	-	Accede a propiedades de objetos con variables </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio088.html">88	-	Actualizando las propiedades de un objeto </a> <br>
 89	-	Añade nuevas propiedades a un objeto de JavaScript <br>
 90	-	Elimina propiedades en un objeto de JavaScript <br>
 91	-	Usa objetos para hacer búsquedas <br>

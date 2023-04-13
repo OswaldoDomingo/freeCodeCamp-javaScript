@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizando las propiedades de un objeto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio088.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Actualizando las propiedades de un objeto</h1>
+    <h2>Ejercicio 88</h2>
+    <!-- Propuesta de ejercicio -->
+    Después de haber creado un objeto de JavaScript, puedes actualizar sus propiedades en cualquier momento tal y como
+    actualizarías cualquier otra variable. Puedes utilizar tanto la notación de puntos como la notación de corchetes
+    para actualizar.
+    <br>
+    Por ejemplo, veamos ourDog:
+    <br>
+    <pre class="codigoFalso">
+        const ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything!"]
+          };                    
+    </pre>
+    <br>
+    Puesto que es un perro particularmente feliz, vamos a cambiar su nombre por la cadena Happy Camper. Así es como
+    actualizamos la propiedad del nombre del objeto: ourDog.name = "Happy Camper"; o ourDog["name"] = "Happy Camper";.
+    Ahora cuando evaluamos ourDog.name, en lugar de obtener Camper, vamos a obtener su nuevo nombre, Happy Camper.
+    <hr>
+    Ejercicio: <br>
+    Actualiza la propiedad nombre del objeto myDog. Cambiemos su nombre de Coder a Happy Coder. Puedes utilizar tanto la
+    notación de puntos como la notación de corchetes.
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+        const myDog = {
+        "name": "Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+        };
+
+    // Cambia solo el código debajo de esta línea
+    </pre>
+    <!-- Código ya resuelto -->
+
+    <pre>
+    Código resuelto
+        const myDog = {
+            "name": "Coder",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["freeCodeCamp Campers"]
+        };
+        myDog.name = ["Happy Coder"]; //Las dos formas son buenas
+        myDog["name"] = "Happy Coder"; //Las dos formas son buenas
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes actualizar la propiedad name de myDog para que sea igual a la cadena Happy Coder. <br>
+    Aprobado: No debes editar la definición de myDog.
+
+</body>
+
+</html>

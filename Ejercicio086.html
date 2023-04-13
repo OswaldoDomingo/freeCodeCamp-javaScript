@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accede a propiedades de objetos con notación de corchete</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio086.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Accede a propiedades de objetos con notación de corchete</h1>
+    <h2>Ejercicio 86</h2>
+    <!-- Propuesta de ejercicio -->
+    La segunda manera de acceder a las propiedades de un objeto es con la notación de corchetes ([]). Si la propiedad
+    del objeto al que intentas acceder tiene un espacio en el nombre, necesitarás usar notación de corchetes.
+    <br>
+    Sin embargo, también puedes utilizar la notación de corchetes en las propiedades de objeto sin espacios.
+    <br>
+    Aquí hay un ejemplo de cómo usar la notación de corchetes para leer la propiedad de un objeto:
+    <br>
+
+    <pre class="codigoFalso">
+    const myObj = {
+        "Space Name": "Kirk",
+        "More Space": "Spock",
+        "NoSpace": "USS Enterprise"
+        };
+        
+        myObj["Space Name"];
+        myObj['More Space'];
+        myObj["NoSpace"];
+          
+
+    </pre>
+    <br>
+    myObj["Space Name"] sería la cadena Kirk, myObj['More Space'] sería la cadena Spock, y myObj["NoSpace"] sería la cadena USS Enterprise.
+    <br>
+    Ten en cuenta que los nombres de las propiedades con espacios deben estar entre comillas (simples o dobles).    
+    <br>
+    <hr>
+    Lee los valores de las propiedades an entree y the drink de testObj usando la notación de corchetes y asígnalos a entreeValue y drinkValue respectivamente.
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const testObj = {
+      "an entree": "hamburger",
+      "my side": "veggies",
+      "the drink": "water"
+    };
+    
+    // Cambia solo el código debajo de esta línea
+    const entreeValue = testObj;   // Cambia esta línea
+    const drinkValue = testObj;    // Cambia esta línea
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+        Código resuelto
+    const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+    };
+
+    const entreeValue = testObj["an entree"]; 
+    const drinkValue = testObj["the drink"]; 
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>   
+    Aprobado: entreeValue debe ser una cadena de texto <br>
+    Aprobado: El valor de entreeValue debe ser la cadena hamburger <br>
+    Aprobado: drinkValue debe ser una cadena <br>
+    Aprobado: El valor de drinkValue debe ser la cadena water <br>
+    Aprobado: Debes usar la notación de corchetes dos veces
+
+</body>
+
+</html>
