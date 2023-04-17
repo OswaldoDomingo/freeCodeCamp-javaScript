@@ -2,7 +2,7 @@
 ## Ejercicios de javaScript de freecodecamp
 ### Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <br>
 
-[ ] 1	-	Comenta tu código de JavaScript <br>
+[ x ] 1	-	Comenta tu código de JavaScript <br>
 2	-	Declara variables de JavaScript <br>
 3	-	Almacenar valores con el operador de asignación <br>
 4	-	Asigna el valor de una variable a otra variable <br>
