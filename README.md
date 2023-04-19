@@ -80,7 +80,7 @@
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio076.html">76	-	Código de golf </a><br>
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio077.html">77	-	Seleccionando entre muchas opciones con declaración switch </a><br>
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio078.html">78	-	Agrega una opción predeterminada en las declaraciones switch </a> <br>
-v<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio079.html">79	-	Múltiples opciones idénticas en las declaraciones "switch" </a><br>
+- [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio079.html">79	-	Múltiples opciones idénticas en las declaraciones "switch" </a><br>
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio080.html">80	-	Reemplazando cadenas de "If Else" por "Switch" </a><br>
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio081.html">81	-	Devuelve valores booleanos desde funciones </a><br>
 - [x] <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio082.html">82	-	Patrón de devolución anticipado para funciones </a><br>
