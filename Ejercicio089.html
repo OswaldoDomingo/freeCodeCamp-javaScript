@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añade nuevas propiedades a un objeto de JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio089.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Añade nuevas propiedades a un objeto de JavaScript</h1>
+    <h2>Ejercicio 89</h2>
+    <!-- Propuesta de ejercicio -->
+    Puedes añadir nuevas propiedades a los objetos de JavaScript existentes de la misma manera que los modificarías.
+    <br>
+    Así es como podríamos agregar una propiedad bark a nuestro objeto ourDog:
+    <br>
+    ourDog.bark = "bow-wow"; <br>
+    o
+    <br>
+    ourDog["bark"] = "bow-wow"; <br>
+    Ahora cuando evaluemos ourDog.bark, obtendremos su ladrido, bow-wow.
+    <br>
+    Por ejemplo:
+    <br>
+    <pre class="codigoFalso">
+        const ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything!"]
+          };
+          
+          ourDog.bark = "bow-wow";                    
+    </pre>
+    <br>
+    <hr>
+    Ejercicio: <br>
+    Añade una propiedad bark a myDog y establécela a un sonido de perro, como "woof". Puedes usar tanto la notación de puntos como la notación de corchetes.
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    const myDog = {
+        "name": "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+      };
+    </pre>
+    <!-- Código ya resuelto -->
+        <pre>
+    Código resuelto
+    const myDog = {
+        "name": "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+      };
+      
+      myDog.bark = "woof"
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:Debes agregar la propiedad bark a myDog. <br>
+    Aprobado:No debes agregar bark a la inicialización de myDog.
+
+</body>
+
+</html>

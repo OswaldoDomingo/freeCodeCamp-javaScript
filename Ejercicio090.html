@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añade nuevas propiedades a un objeto de JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio090.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Elimina propiedades en un objeto de JavaScript</h1>
+    <h2>Ejercicio 90</h2>
+    <!-- Propuesta de ejercicio -->
+    También podemos eliminar propiedades de objetos de esta forma:
+    <br>
+    delete ourDog.bark;
+    <br>
+    Por ejemplo:
+    <br>
+    <pre class="codigoFalso">
+        const ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything!"],
+            "bark": "bow-wow"
+          };
+          
+          delete ourDog.bark;
+                              
+    </pre>
+    <br>
+    Después de la última línea mostrada anteriormente, ourDog se ve así:
+    <br>
+    <pre class="codigoFalso">
+        {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything!"]
+          }
+          
+
+    </pre>
+    <hr>
+    Ejercicio: <br>
+    Elimina la propiedad tails de myDog. Puedes usar tanto la notación de puntos como la notación de corchetes.
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const myDog = {
+        "name": "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"],
+        "bark": "woof"
+    };
+
+// Cambia solo el código debajo de esta línea
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+
+    const myDog = {
+        "name": "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"],
+        "bark": "woof"
+    };
+    
+    delete myDog.tails;
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes eliminar la propiedad tails de myDog. <br>
+    Aprobado: No debes modificar la disposición de myDog.
+
+</body>
+
+</html>
