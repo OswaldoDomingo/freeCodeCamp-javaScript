@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de discos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio096.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Colección de discos</h1>
+    <h2>Ejercicio 96</h2>
+    <!-- Propuesta de ejercicio -->
+    Está creando una función que ayuda en el mantenimiento de una colección de álbumes musicales. La colección se organiza como un objeto que contiene múltiples álbumes que también son objetos. Cada álbum se representa en la colección con un id único como nombre de la propiedad. Dentro de cada objeto álbum, hay varias propiedades que describen información sobre el álbum. No todos los álbumes tienen información completa.
+    <br>
+    La función updateRecords toma 4 argumentos representados por los siguientes parámetros de función:
+
+    <ul>
+        <li>records - un objeto que contiene varios álbumes individuales</li>
+        <li>id - un número que representa un álbum específico en el objeto records</li>
+        <li>prop - una cadena que representa el nombre de la propiedad del álbum a actualizarvalue - una cadena que contiene la información utilizada para actualizar la propiedad del álbum</li>
+        <li></li>
+    </ul>
+    <p>Completa la función utilizando las reglas siguientes para modificar el objeto pasado a la función.</p>
+   <ul>
+    <li>Tu función debe devolver siempre el objeto records completo.</li>
+    <li>Si value es una cadena vacía, elimina la propiedad prop dada del álbum.</li>
+    <li>If prop isn't tracks and value isn't an empty string, assign the value to that album's prop.</li>
+    <li>If prop is tracks and value isn't an empty string, add the value to the end of the album's tracks array. You need to create this array first if the album does not have a tracks property.</li>
+   </ul>
+   <p> <b> Nota:</b> Para las pruebas se utiliza una copia del objeto recordCollection. No debes modificar directamente el objeto recordCollection.</p>
+
+    <br>
+    ourPets[0].names[1] sería la cadena Fluffy, y ourPets[1].names[0] sería la cadena Spot.
+
+    <hr>
+    Ejercicio: <br>
+    
+    
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const recordCollection = {
+    2548: {
+        albumTitle: 'Slippery When Wet',
+        artist: 'Bon Jovi',
+        tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+        albumTitle: '1999',
+        artist: 'Prince',
+        tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+        artist: 'Robert Palmer',
+        tracks: []
+    },
+    5439: {
+        albumTitle: 'ABBA Gold'
+    }
+    };
+
+    // Cambia solo el código debajo de esta línea
+    function updateRecords(records, id, prop, value) {
+    return records;
+    }
+
+    updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+        
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    
+
+</body>
+
+</html>

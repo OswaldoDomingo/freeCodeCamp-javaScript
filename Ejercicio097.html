@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itera con el bucle "while" de JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio097.html"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Itera con el bucle "while" de JavaScript</h1>
+    <h2>Ejercicio 97</h2>
+    <!-- Propuesta de ejercicio -->
+    Puedes ejecutar el mismo código múltiples veces usando un bucle.
+    <br>
+El primer tipo de bucle que aprenderemos se llama bucle while porque ejecuta una condición específica mientras esta sea verdadera, y se detiene una vez que esa condición ya no sea verdadera.
+    <br>
+    <pre class="codigoFalso">
+        const ourArray = [];
+        let i = 0;
+
+        while (i < 5) {
+            ourArray.push(i);
+            i++;
+        }
+
+    </pre>
+    <br>
+    En el ejemplo de código anterior, el bucle while se ejecutará 5 veces y añadirá los números de 0 a 4 a ourArray.
+    <br>
+    Intentemos construir un bucle while para que funcione empujando valores a un arreglo.
+    <hr>
+    Ejercicio: <br>
+    Agrega los números de 5 a 0 (inclusivo) en orden descendente a myArray usando un bucle while.
+    
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const myArray = [];
+
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myArray = [];
+    let i = 5;
+
+    while(i >=0){
+        myArray.push(i);
+        i--;
+    }
+        
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes utilizar un bucle while para esto. <br>
+    probado: myArray debe ser igual a [5, 4, 3, 2, 1, 0].
+
+</body>
+
+</html>

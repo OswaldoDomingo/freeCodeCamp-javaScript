@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accede a objetos anidados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio094.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Accede a objetos anidados</h1>
+    <h2>Ejercicio 94</h2>
+    <!-- Propuesta de ejercicio -->
+    Se puede acceder a las sub propiedades de objetos encadenando la notación de puntos o corchetes.
+    <br>
+    Aquí hay un objeto anidado:
+    <br>
+  
+    <pre class="codigoFalso">
+        const ourStorage = {
+            "desk": {
+              "drawer": "stapler"
+            },
+            "cabinet": {
+              "top drawer": { 
+                "folder1": "a file",
+                "folder2": "secrets"
+              },
+              "bottom drawer": "soda"
+            }
+          };
+          
+          ourStorage.cabinet["top drawer"].folder2;
+          ourStorage.desk.drawer;
+          
+                                   
+    </pre>
+    <br>
+    ourStorage.cabinet["top drawer"].folder2 sería la cadena secrets y ourStorage.desk.drawer sería la cadena stapler.
+
+    <hr>
+    Ejercicio: <br>
+    Accede al objeto myStorage y asigna el contenido de la propiedad glove box a la variable gloveBoxContents. 
+    Utiliza la notación de puntos para todas las propiedades cuando sea posible, de lo contrario utiliza la notación de corchetes.
+    
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    const myStorage = {
+        "car": {
+          "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+           },
+          "outside": {
+            "trunk": "jack"
+          }
+        }
+      };
+      
+      const gloveBoxContents = undefined;
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myStorage = {
+        "car": {
+          "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+           },
+          "outside": {
+            "trunk": "jack"
+          }
+        }
+      };
+      
+      const gloveBoxContents = myStorage.car.inside["glove box"];    
+      //maps
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: gloveBoxContents debe ser igual a la cadena maps. <br>
+    Aprobado: Tu código debe utilizar notación de puntos y de corchetes para acceder a myStorage.
+
+</body>
+
+</html>

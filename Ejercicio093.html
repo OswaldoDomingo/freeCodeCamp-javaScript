@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando objectos complejos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio093.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Manipulando objectos complejos</h1>
+    <h2>Ejercicio 93</h2>
+    <!-- Propuesta de ejercicio -->
+    A veces, es posible que desees almacenar datos en una estructura de datos flexible. Un objeto de JavaScript es una forma de manejar datos flexibles. 
+    Permiten combinaciones arbitrarias de cadenas, números, booleanos, arreglos, funciones, y objetos.
+    <br>
+    Este es un ejemplo de una estructura de datos compleja:
+    <br>
+  
+    <pre class="codigoFalso">
+        const ourMusic = [
+        {
+          "artist": "Daft Punk",
+          "title": "Homework",
+          "release_year": 1997,
+          "formats": [ 
+            "CD", 
+            "Cassette", 
+            "LP"
+          ],
+          "gold": true
+        }
+      ];
+                                   
+    </pre>
+    <br>
+    Esto es una arreglo que contiene un objeto en su interior. 
+    El objeto tiene varias piezas de metadatos sobre un álbum. 
+    También tiene un arreglo anidado de formats. 
+    Si desea añadir más registros de álbumes, puede hacerlo añadiendo registros a la parte superior del arreglo. 
+    Los objetos almacenan datos en una propiedad, con formato clave-valor. En el ejemplo anterior, "artist": "Daft Punk" es una propiedad que tiene como clave artist y su valor es Daft Punk.
+    <br>
+    <b>Nota:</b> <u> Deberás colocar una coma después de cada objeto en el arreglo, a menos que sea el último objeto.</u>
+
+    <hr>
+    Ejercicio: <br>
+    Añade un nuevo álbum al arreglo myMusic. <br>
+    Añade las cadenas artist y title, el número release_year, y un arreglo de cadenas formats.
+    <hr>
+    
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    }
+  ];
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    }
+      <span style="color: crimson;"><b>,</b></span>
+      {
+        "artist": "Oswaldo Domingo",
+      "title": "el hombre del piano",
+      "release_year": 1963,
+      "formats": [
+        "LP",
+        "4T",
+        "DVD"
+      ],
+      "gold": true
+    }
+  ];
+
+
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: myMusic debe ser un arreglo <br>
+    Aprobado: myMusic debe tener al menos dos elementos <br>
+    Aprobado: Los elementos en el arreglo myMusic deben ser objetos <br>
+    Aprobado: Tu objeto en myMusic debe tener al menos 4 propiedades <br>
+    Aprobado: Tu objeto en myMusic debe contener la propiedad artist que es una cadena <br>
+    Aprobado: Tu objeto en myMusic debe contener la propiedad title que es una cadena <br>
+    Aprobado: Tu objeto en myMusic debe contener la propiedad release_year que es un número <br>
+    Aprobado: Tu objeto en myMusic debe contener una propiedad de formats que es un arreglo <br>
+    Aprobado: formats debe ser un arreglo de cadenas con al menos dos elementos
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accede a arreglos anidados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio095.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Accede a arreglos anidados</h1>
+    <h2>Ejercicio 95</h2>
+    <!-- Propuesta de ejercicio -->
+    Como hemos visto en ejemplos anteriores, los objetos pueden contener tanto objetos anidados como así también arreglos anidados. 
+    De manera similar a como se accede a los objetos anidados, la notación de corchetes de arreglos puede ser encadenada para acceder a arreglos anidados.
+    <br>
+    En el siguiente ejemplo, vemos cómo se accede a un arreglo anidado:
+   
+    <pre class="codigoFalso">
+        const ourPets = [
+        {
+          animalType: "cat",
+          names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-Cat"
+          ]
+        },
+        {
+          animalType: "dog",
+          names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+          ]
+        }
+      ];
+      
+      ourPets[0].names[1];
+      ourPets[1].names[0];
+                                         
+    </pre>
+    <br>
+    ourPets[0].names[1] sería la cadena Fluffy, y ourPets[1].names[0] sería la cadena Spot.
+
+    <hr>
+    Ejercicio: <br>
+    Utilizando la notación de puntos y corchetes, establezca la variable secondTree en el segundo elemento de la lista trees del objeto myPlants.
+    
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+  
+  const secondTree = "";
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+        ]
+        },
+        {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+        }
+    ];
+    const secondTree = myPlants[1].list[1];
+        //pine
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: secondTree debe ser igual a la cadena pine. <br>
+    Aprobado: Tu código debe usar las notaciones de puntos y de corchetes para acceder a myPlants.
+
+</body>
+
+</html>

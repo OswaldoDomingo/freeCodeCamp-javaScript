@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica las propiedades de un objeto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio092.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Verifica las propiedades de un objeto</h1>
+    <h2>Ejercicio 92</h2>
+    <!-- Propuesta de ejercicio -->
+    A veces es útil comprobar si existe o no la propiedad de un objeto dado. <br>
+    Podemos utilizar el método .hasOwnProperty(propname) para determinar si un objeto tiene una propiedad con ese nombre. .hasOwnProperty() devuelve true o false si se encuentra la propiedad o no. 
+    <br>
+   Por ejemplo
+    <br>
+   
+    <pre class="codigoFalso">
+        const myObj = {
+            top: "hat",
+            bottom: "pants"
+          };
+          
+          myObj.hasOwnProperty("top");
+          myObj.hasOwnProperty("middle");                              
+    </pre>
+    <br>
+    El primer hasOwnProperty devuelve true, mientras que el segundo devuelve false.
+    <hr>
+    Ejercicio: <br>
+    Modifica la función checkObj para verificar si el objeto obj pasado a la función contiene la propiedad checkProp. <br>
+    Si la propiedad es encontrada, devuelve el valor de la propiedad. Si no, devuelve "Not Found".
+    <br>
+
+    <pre class="codigoFalso">
+    Código original.
+    function checkObj(obj, checkProp) {
+        // Cambia solo el código debajo de esta línea
+        return "Change Me!";
+        // Cambia solo el código encima de esta línea
+      }
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+
+    function checkObj(obj, checkProp) {
+        let value = obj.hasOwnProperty(checkProp);
+          value ? value = obj[checkProp] : value = "Not Found"
+        return value;
+    
+    }
+
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") debe devolver la cadenapony. <br>
+    Aprobado: checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet") debe devolver la cadena kitten. <br>
+    Aprobado: checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house") debe devolver la cadena Not Found. <br>
+    Aprobado: checkObj({city: "Seattle"}, "city") debe devolver la cadena Seattle. <br>
+    Aprobado: checkObj({city: "Seattle"}, "district") debe devolver la cadena Not Found. <br>
+    Aprobado: checkObj({pet: "kitten", bed: "sleigh"}, "gift") debe devolver la cadena Not Found.
+
+</body>
+
+</html>
