@@ -93,12 +93,12 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio089.html">89	-	Añade nuevas propiedades a un objeto de JavaScript </a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio090.html">90	-	Elimina propiedades en un objeto de JavaScript </a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio091.html">91	-	Usa objetos para hacer búsquedas </a> <br>
-92	-	Verifica las propiedades de un objeto <br>
-93	-	Manipulando objectos complejos <br>
-94	-	Accede a objetos anidados <br>
-95	-	Accede a arreglos anidados <br>
-96	-	Colección de discos <br>
-97	-	Itera con el bucle "while" de JavaScript <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio092.html">92	-	Verifica las propiedades de un objeto </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio093.html">93	-	Manipulando objectos complejos </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio094.html">94	-	Accede a objetos anidados </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio095.html">95	-	Accede a arreglos anidados </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio096.html">96	-	Colección de discos </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio097.html">97	-	Itera con el bucle "while" de JavaScript </a><br>
 98	-	Itera con los bucles "for" de JavaScript <br>
 99	-	Itera números impares con un bucle "for" <br>
 100	-	Cuenta hacia atrás con un bucle "for" <br>
