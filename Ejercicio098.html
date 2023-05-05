@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itera con los bucles "for" de JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio098.html"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Itera con los bucles "for" de JavaScript</h1>
+    <h2>Ejercicio 98</h2>
+    Puedes ejecutar el mismo código múltiples veces usando un bucle.
+
+    El tipo más común de bucle de JavaScript se llama bucle for porque se ejecuta "por" un número específico de veces.
+    <br>
+    Los bucles for se declaran con tres expresiones opcionales separadas por punto y coma: <br>
+    for (a; b; c), donde a es la sentencia de inicialización, b es la sentencia condicional, y c es la expresión final.
+    <br>
+    La sentencia de inicialización se ejecuta una sola vez antes de que el bucle comience. Normalmente se utiliza para
+    definir y configurar tu variable de bucle. <br>
+    La sentencia condicional es evaluada al principio de cada iteración del bucle y continuará siempre y cuando sea
+    true. Cuando la condición sea false al inicio de la iteración, el bucle dejará de ejecutarse. Esto significa que si
+    la condición comienza como falso, tu bucle nunca se ejecutará. <br>
+    La expresión final se ejecuta al final de cada iteración del bucle, antes de la siguiente comprobación de condición
+    y se utiliza normalmente para incrementar o disminuir tu contador de bucle. <br>
+    En el siguiente ejemplo inicializamos con i = 0 e iteramos mientras nuestra condición i < 5 es verdadera.
+        Incrementaremos i por 1 en cada iteración de bucle con i++ como nuestra expresión final. <br>
+        <!-- Propuesta de ejercicio -->
+        <br>
+        <pre class="codigoFalso">
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+    </pre>
+        <br>
+        ourArray ahora tendrá el valor [0, 1, 2, 3, 4].
+        <hr>
+        Ejercicio: <br>
+        Usa un bucle for para empujar los valores desde el 1 al 5 en myArray.
+        <br>
+        <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const myArray = [];
+    // Cambia solo el código debajo de esta línea
+    </pre>
+        <!-- Código ya resuelto -->
+        <pre>
+    Código resuelto
+    const myArray = [];
+    for(let i=1; i<6; i++){
+    myArray.push(i);
+    }
+    console.log(myArray)
+    </pre>
+        <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes usar un bucle for para esto. <br>
+    Aprobado: myArray debe ser igual a [1, 2, 3, 4, 5].
+
+</body>
+
+</html>

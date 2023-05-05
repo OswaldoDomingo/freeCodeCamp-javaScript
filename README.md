@@ -99,7 +99,7 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio095.html">95	-	Accede a arreglos anidados </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio096.html">96	-	Colección de discos </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio097.html">97	-	Itera con el bucle "while" de JavaScript </a><br>
-98	-	Itera con los bucles "for" de JavaScript <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio098.html">98	-	Itera con los bucles "for" de JavaScript</a><br>
 99	-	Itera números impares con un bucle "for" <br>
 100	-	Cuenta hacia atrás con un bucle "for" <br>
 101	-	Itera a través de un arreglo con un bucle "for" <br>
