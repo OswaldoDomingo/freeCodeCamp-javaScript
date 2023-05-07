@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta hacia atrás con un bucle "for"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio100.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Cuenta hacia atrás con un bucle "for"</h1>
+    <h2>Ejercicio 100</h2>
+    Un bucle for también puede contar hacia atrás, siempre que definamos las condiciones adecuadas.
+    <br>
+    Para poder disminuirle dos cada iteración, necesitaremos cambiar nuestra inicialización, condición, y expresión
+    final.
+    <br>
+    Empezaremos en i = 10 e iteraremos mientras i > 0. Disminuiremos i en 2 por cada bucle con i -= 2.
+    <br>
+    <!-- Propuesta de ejercicio -->
+    <pre class="codigoFalso">
+        const ourArray = [];
+        for (let i = 10; i > 0; i -= 2) {
+        ourArray.push(i);
+        }    
+    </pre>
+    <br>
+    ourArray ahora contendrá [10, 8, 6, 4, 2].  <br>
+    Ahora cambiemos el valor de inicialización y la expresión final de nuestro bucle para que podamos contar hacia atrás de dos en dos y así crear un arreglo descendente de números impares.
+    <hr>
+    Ejercicio: <br>
+    Inserta los números impares desde el 9 hasta el 1 en myArray utilizando un bucle for.
+    <hr>
+    <br>
+    <pre class="codigoFalso">
+    Código original.
+    let myArray = []
+    </pre>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    const myArray = [];
+    for(let i = 10; i > 0; i--){
+        if(i%2 != 0){
+          myArray.push(i);
+        }
+    }
+    console.log(myArray);
+    //[ 9, 7, 5, 3, 1 ]
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Debes utilizar un bucle for para esto. <br>
+    Aprobado: Debes utilizar el método de arreglo push. <br>
+    Aprobado: myArray debe ser igual a [9, 7, 5, 3, 1].
+
+</body>
+
+</html>

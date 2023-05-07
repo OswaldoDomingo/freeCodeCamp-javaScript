@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itera números impares con un bucle "for"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio099.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Itera números impares con un bucle "for"</h1>
+    <h2>Ejercicio 99</h2>
+    Los bucles "for" no tienen que iterar de uno en uno a la vez. Al cambiar nuestra final-expression (expresión final), podemos contar con números pares.
+    <br>
+    Empezaremos en i = 0 y realizaremos el bucle mientras i < 10. Incrementaremos i en 2 cada bucle utilizando i += 2.
+    <br>
+        <!-- Propuesta de ejercicio -->
+        <pre class="codigoFalso">
+        const ourArray = [];
+
+        for (let i = 0; i < 10; i += 2) {
+            ourArray.push(i);
+        }
+            
+    </pre>
+        <br>
+        ourArray ahora contendrá [0, 2, 4, 6, 8]. Cambiemos nuestra initialization (inicialización) para que podamos contar por números impares.
+        <hr>
+        Ejercicio: <br>
+        Inserta los números impares desde 1 hasta 9 en myArray utilizando un bucle for.
+        <br>
+        <pre class="codigoFalso">
+    Código original.
+    // Configuración
+    const myArray = [];
+    // Cambia solo el código debajo de esta línea
+    </pre>
+        <!-- Código ya resuelto -->
+        <pre>
+    Código resuelto
+    const myArray = [];
+    for (let i=0; i < 10; i++){
+            if(i%2 != 0){
+            myArray.push(i);
+        }
+    }
+    //[ 1, 3, 5, 7, 9 ]
+    </pre>
+        <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: Debes utilizar un bucle for para esto. <br>
+    Aprobado: myArray debe ser igual a [1, 3, 5, 7, 9].
+
+</body>
+
+</html>
