@@ -102,9 +102,9 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio098.html">98	-	Itera con los bucles "for" de JavaScript</a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio099.html">99	-	Itera números impares con un bucle "for" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">100	-	Cuenta hacia atrás con un bucle "for" </a><br>
-101	-	Itera a través de un arreglo con un bucle "for" <br>
-102	-	Anida bucles "for" <br>
-103	-	Itera con el bucle "do...while" de JavaScript <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">101	-	Itera a través de un arreglo con un bucle "for" </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">102	-	Anida bucles "for" </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">103	-	Itera con el bucle "do...while" de JavaScript </a><br>
 104	-	Reemplaza bucles usando recursión <br>
 105	-	Búsqueda de perfiles <br>
 106	-	Genera fracciones aleatorias con JavaScript <br>
