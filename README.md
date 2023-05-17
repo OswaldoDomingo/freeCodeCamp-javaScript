@@ -102,16 +102,16 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio098.html">98	-	Itera con los bucles "for" de JavaScript</a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio099.html">99	-	Itera números impares con un bucle "for" </a><br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">100	-	Cuenta hacia atrás con un bucle "for" </a><br>
-<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">101	-	Itera a través de un arreglo con un bucle "for" </a><br>
-<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">102	-	Anida bucles "for" </a><br>
-<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio100.html">103	-	Itera con el bucle "do...while" de JavaScript </a><br>
-104	-	Reemplaza bucles usando recursión <br>
-105	-	Búsqueda de perfiles <br>
-106	-	Genera fracciones aleatorias con JavaScript <br>
-107	-	Genera números enteros aleatorios con JavaScript <br>
-108	-	Genera números enteros aleatorios dentro de un rango <br>
-109	-	Utiliza la función "parseInt" <br>
-110	-	Utiliza la función "parseInt" con Radix (Base) <br>
-111	-	Usa el operador condicional (ternario) <br>
-112	-	Usa múltiples operadores condicionales (ternarios) <br>
-113	-	Utiliza recursión para crear una cuenta regresiva <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio101.html">101	-	Itera a través de un arreglo con un bucle "for" </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio102.html">102	-	Anida bucles "for" </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio103.html">103	-	Itera con el bucle "do...while" de JavaScript </a><br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio104.html">104	-	Reemplaza bucles usando recursión </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio105.html">105	-	Búsqueda de perfiles </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio106.html">106	-	Genera fracciones aleatorias con JavaScript </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio107.html">107	-	Genera números enteros aleatorios con JavaScript </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio108.html">108	-	Genera números enteros aleatorios dentro de un rango </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio109.html">109	-	Utiliza la función "parseInt" </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio110.html">110	-	Utiliza la función "parseInt" con Radix (Base) </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio111.html">111	-	Usa el operador condicional (ternario) </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio112.html">112	-	Usa múltiples operadores condicionales (ternarios) </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio113.html">113	-	Utiliza recursión para crear una cuenta regresiva </a> <br>
