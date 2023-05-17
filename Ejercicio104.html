@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplaza bucles usando recursión</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio104.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Reemplaza bucles usando recursión</h1>
+    <h2>Ejercicio 104</h2>
+    La recursión es el concepto que una función puede expresarse en términos de sí misma. Para ayudar a comprender esto, comienza pensando en la siguiente tarea: multiplica los primeros n elementos de un arreglo para crear el producto de esos elementos. Usando un bucle for, puedes hacer esto:
+    <br>
+    <!-- Propuesta de ejercicio -->
+    <pre class="codigoFalso">
+    function multiply(arr, n) {
+        let product = 1;
+        for (let i = 0; i < n; i++) {
+            product *= arr[i];
+        }
+        return product;
+        }
+    </pre>
+    <br>
+    Sin embargo, nota que multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]. Esto significa que puedes reescribir multiply en términos de sí misma y que nunca necesites hacer uso de un bucle.
+    <br>
+    <pre class="codigoFalso">
+    function multiply(arr, n) {
+        if (n <= 0) {
+            return 1;
+        } else {
+            return multiply(arr, n - 1) * arr[n - 1];
+        }
+        }
+    </pre>
+    <br>
+    La versión recursiva de multiply se desglosa así. En el caso base, donde n <= 0, devuelve 1. Para valores más grandes de n, se llama a sí misma, pero con n - 1. Esa llamada de función se evalúa de la misma manera, llamando a multiply otra vez hasta que n <= 0. En este punto, todas las funciones pueden devolver y la multiply original devuelve la respuesta.
+    <br>
+    <b>Nota:</b> 
+    <br> Las funciones recursivas deben tener un caso base cuando devuelven sin tener que llamar a la función de nuevo (en este ejemplo, cuando n &lt;= 0), de lo contrario nunca podrán terminar de ejecutarse.
+    <br>
+    <hr>
+    Ejercicio: <br>
+    Escribe una función recursiva, sum(arr, n), que devuelve la suma de los primeros elementos n de un arreglo arr.
+    <hr>
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function sum(arr, n) {
+        // Cambia solo el código debajo de esta línea
+      
+        // Cambia solo el código encima de esta línea
+      }
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function sum(arr, n) {
+        if(n<=0){
+            return 0;
+        }else{
+            return sum(arr, n-1)+arr[n-1];
+        }
+    }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:sum([1], 0) debe ser igual a 0. <br>
+    Aprobado:sum([2, 3, 4], 1) debe ser igual a 2. <br>
+    Aprobado:sum([2, 3, 4, 5], 3) debe ser igual a 9. <br>
+    Aprobado:Tu código no debe depender de ningún tipo de bluces (for o while) o funciones de orden alto tales como forEach, map, filter, o reduce.). <br>
+    Aprobado:Debes usar recursión para resolver este problema.  
+</body>
+
+</html>

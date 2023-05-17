@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de perfiles</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio105.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Búsqueda de perfiles</h1>
+    <h2>Ejercicio 105</h2>
+    Tenemos un arreglo de objetos que representan a diferentes personas en nuestras listas de contactos.
+    <br>
+    Una función lookUpProfile que recibe nombre (name) y una propiedad (prop) como argumentos preescritos para ti.
+    <br>
+    La función debe verificar si el nombre (name) es el nombre de pila del contacto (firstName) y la propiedad (prop) dada es una propiedad de ese contacto.
+    <br>
+    Si ambos son verdaderos, entonces devolver el "valor" de esa propiedad.
+    <br>
+    Si name no corresponde a ningún contacto, entonces devuelve la cadena No such contact.
+    <br>
+    Si prop no corresponde a ninguna propiedad válida de un contacto encontrado que coincida con name entonces devuelve la cadena No such property.
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+// Configuración
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  // Cambia solo el código debajo de esta línea
+
+  // Cambia solo el código encima de esta línea
+}
+
+lookUpProfile("Akira", "likes");
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function lookUpProfile(name, prop) {
+      for(let i=0; i < contacts.length; i++){
+        if(contacts[i].firstName === name){
+          if(prop in contacts[i]){
+            return contacts[i][prop];
+          } else{
+            return "No such property";
+          }
+        }
+      }
+      return "No such contact";
+    }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:lookUpProfile("Kristian", "lastName") debe devolver la cadena Vos <br>
+    Aprobado:lookUpProfile("Sherlock", "likes") debe devolver ["Intriguing Cases", "Violin"] <br>
+    Aprobado:lookUpProfile("Harry", "likes") debe devolver un arreglo <br>
+    Aprobado:lookUpProfile("Bob", "number") debe devolver la cadena No such contact <br>
+    Aprobado:lookUpProfile("Bob", "potato") debe devolver la cadena No such contact <br>
+    Aprobado:lookUpProfile("Akira", "address") debe devolver la cadena No such property
+</body>
+
+</html>

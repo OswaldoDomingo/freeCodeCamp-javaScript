@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera fracciones aleatorias con JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio106.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Genera fracciones aleatorias con JavaScript</h1>
+    <h2>Ejercicio 106</h2>
+    Los números aleatorios son útiles para crear comportamientos aleatorios.
+    <br>
+    JavaScript tiene una función Math.random() que genera un número decimal aleatorio entre 0 (inclusivo) y 1 (exclusivo). Así que Math.random() puede devolver un 0 pero nunca devuelve un 1.
+    <br>
+    Nota: Al igual que el <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator"> almacenamiento de valores con el operador de asignación</a>, todas las llamadas a la función se resolverán antes de que se ejecute el return, por lo que el return devuelve el valor de la función Math.random().
+    <br>
+    <!-- Pregunta -->
+    <p>Cambia randomFraction para que devuelva un número aleatorio en lugar de devolver 0.</p>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function randomFraction() {
+
+        // Cambia solo el código debajo de esta línea
+      
+        return 0;
+      
+        // Cambia solo el código encima de esta línea
+      }
+
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function randomFraction() {
+        return Math.random();
+      }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:randomFraction debe devolver un número aleatorio. <br>
+    Aprobado:El número devuelto por randomFraction debe ser un decimal. <br>
+    Aprobado:Debes usar Math.random para generar el número decimal aleatorio.
+</body>
+
+</html>

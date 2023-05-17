@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera números enteros aleatorios con JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio107.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Genera números enteros aleatorios con JavaScript</h1>
+    <h2>Ejercicio 107</h2>
+    Puedes generar números decimales aleatorios con Math.random(), pero a veces es necesario generar números enteros aleatorios. El siguiente proceso te dará un número entero aleatorio menor que 20:
+    <ol>
+        <li>Usa Math.random() para generar un número decimal aleatorio.</li>
+        <li>Multiplica ese número decimal aleatorio por 20.</li>
+        <li>Usa Math.floor() para redondear este número hacia abajo a su número entero más cercano.</li>
+    </ol>
+    Recuerda que Math.random() nunca puede devolver un 1, así que es imposible obtener 20 ya que estás redondeando hacia abajo con Math.floor(). Este proceso te dará un número entero aleatorio en el rango de 0 a 19.
+    <br>
+    Poniendo todo junto, así es como se ve nuestro código:
+    <br>
+    <pre>
+    Math.floor(Math.random() * 20);
+    </pre>
+    <br>
+    Estás llamando a Math.random(), multiplicando el resultado por 20 y pasando el valor a la función Math.floor() para redondear el valor hacia abajo al número entero más cercano.
+    <hr>
+    <!-- Pregunta -->
+    Utiliza esta técnica para generar y devolver un número entero aleatorio entre 0 y 9.
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function randomWholeNum() {
+        return Math.random();
+      }
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto
+    function randomWholeNum() {
+        return Math.floor(Math.random()*10);
+      }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:El resultado de randomWholeNum debe ser un número entero. <br>
+    Aprobado:Debes usar Math.random para generar un número aleatorio. <br>
+    Aprobado:Debes haber multiplicado el resultado de Math.random por 10 para convertirlo en un número en el rango de cero a nueve. <br>
+    Aprobado:Debes usar Math.floor para eliminar la parte decimal del número.
+</body>
+
+</html>
