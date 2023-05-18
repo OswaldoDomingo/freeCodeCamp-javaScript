@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usa múltiples operadores condicionales (ternarios)</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio111.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Usa múltiples operadores condicionales (ternarios)</h1>
+    <h2>Ejercicio 112</h2>
+    <p>En el desafío anterior, usaste un único operador condicional. También puedes encadenarlos para comprobar múltiples condiciones.</p>
+    <p>La siguiente función utiliza sentencias <b>if</b>, <b>else if</b>, y <b>else</b> para comprobar múltiples condiciones:</p>
+    <pre>
+    function findGreaterOrEqual(a, b) {
+        if (a === b) {
+            return "a and b are equal";
+        }
+        else if (a > b) {
+            return "a is greater";
+        }
+        else {
+            return "b is greater";
+        }
+        }        
+    </pre>
+    <p>La función anterior puede ser reescrita utilizando múltiples operadores condicionales:</p>
+    <pre>
+    function findGreaterOrEqual(a, b) {
+        return (a === b) ? "a and b are equal" 
+            : (a > b) ? "a is greater" 
+            : "b is greater";
+        }
+          
+    </pre>
+    <p>Se considera buena práctica dar formato a múltiples operadores condicionales de forma que cada condición esté en una línea separada, como se muestra arriba. Usar múltiples operadores condicionales sin una indentación adecuada puede hacer tu código difícil de leer. Por ejemplo:</p>
+    <pre>
+    function findGreaterOrEqual(a, b) {
+        return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+        }          
+    </pre>
+
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>
+        En la función <b>checkSign</b>, usa múltiples operadores condicionales (siguiendo el formato recomendado usado en <b>findGreaterOrEqual</b>) para comprobar si un número es <b>positivo</b>, <b>negativo</b> o <b>cero</b>. La función debe devolver <b>positive</b>, <b>negative</b> o <b>zero</b>.
+    </p>
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function checkSign(num) {
+        }
+        checkSign(10);
+
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function checkSign(num) {
+        return (num === 0) ? "zero" : (num > 0)? "positive" : "negative";
+    }       
+    checkSign(10);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: checkSign debe utilizar múltiples operadores condicionales <br>
+    Aprobado: checkSign(10) debe devolver la cadena positive. Ten en cuenta que la capitalización importa <br>
+    Aprobado: checkSign(-12) debe devolver la cadena negative. Ten en cuenta que la capitalización importa <br>
+    Aprobado: checkSign(0) debe devolver la cadena zero. Ten en cuenta que la capitalización importa
+</body>
+
+</html>

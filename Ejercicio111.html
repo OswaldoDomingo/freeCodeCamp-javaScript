@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usa el operador condicional (ternario)</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio111.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Usa el operador condicional (ternario)</h1>
+    <h2>Ejercicio 111</h2>
+    <p>El operador <i> condicional</i>, también llamado el <i> operador ternario</i>, puede utilizarse como una expresión if-else de una sola línea.</p>
+    <p>La sintaxis es <b> a ? b : c</b>, donde <b> a</b> es la condición, <b> b</b> es el código a ejecutar cuando la condición devuelve <b> true</b>, y <b> c</b> es el código a ejecutar cuando la condición devuelve <b> false</b>.</p>
+    <p>La siguiente función utiliza una sentencia <b>if/else</b> para comprobar una condición:</p>
+    <pre>
+    function findGreater(a, b) {
+        if(a > b) {
+            return "a is greater";
+        }
+        else {
+            return "b is greater or equal";
+        }
+        }
+    </pre>
+    <p>Esto puede reescribirse usando el operador condicional:</p>
+    <pre>
+    function findGreater(a, b) {
+        return a > b ? "a is greater" : "b is greater or equal";
+        }
+    </pre>
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    Utiliza el operador condicional en la función <b>checkEqual</b> para comprobar si dos números son iguales o no. La función debe devolver la cadena <b>Equal</b> o la cadena <b>Not Equal</b>.
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function checkEqual(a, b) {
+        }
+        checkEqual(1, 2);
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function checkEqual(a, b) {
+        return a == b?"Equal":"Not Equal"
+        }       
+        checkEqual(1, 2);
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: checkEqual debe usar el operador condicional <br>
+    Aprobado: checkEqual(1, 2) debe devolver la cadena Not Equal <br>
+    Aprobado: checkEqual(1, 1) debe devolver la cadena Equal <br>
+    Aprobado: checkEqual(1, -1) debe devolver la cadena Not Equal
+</body>
+
+</html>

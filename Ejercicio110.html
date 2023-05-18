@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utiliza la función "parseInt" con Radix (Base)</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio110.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Utiliza la función "parseInt" con Radix (Base)</h1>
+    <h2>Ejercicio 110</h2>
+    <p>La función parseInt() analiza una cadena y devuelve un entero. Recibe un segundo argumento para la base (radix), que especifica la base del número representado en la cadena. La base (radix) puede ser un número entero entre 2 y 36.</p>
+    <p>La llamada a la función se realiza de la siguiente manera:</p>
+    <pre>
+        parseInt(string, radix);
+    </pre>
+    <p>Y aquí hay un ejemplo:</p>
+    <pre>
+        const a = parseInt("11", 2);
+    </pre>
+    <p>La variable radix indica que 11 está en el sistema binario, o base 2. Este ejemplo convierte la cadena 11 a un entero 3.</p>
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>Utiliza parseInt() en la función convertToInteger para convertir un número binario en un número entero, y devolverlo.</p>
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function convertToInteger(str) {
+        
+      }
+      convertToInteger("10011");
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function convertToInteger(str) {
+        return parseInt(str, 2);
+      }
+      convertToInteger("10011");
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    convertToInteger debe utilizar la función parseInt() <br>
+    Aprobado: convertToInteger("10011") debe devolver un número <br>
+    Aprobado: convertToInteger("10011") debe devolver 19 <br>
+    Aprobado: convertToInteger("111001") debe devolver 57 <br>
+    Aprobado: convertToInteger("JamesBond") debe devolver NaN
+</body>
+
+</html>

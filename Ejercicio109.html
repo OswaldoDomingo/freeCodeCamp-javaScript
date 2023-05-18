@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utiliza la función "parseInt"</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio109.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Utiliza la función "parseInt"</h1>
+    <h2>Ejercicio 109</h2>
+    <p>La función parseInt() analiza una cadena y devuelve un entero. A continuación, te presentamos un ejemplo:</p>
+    <pre>
+        const a = parseInt("007");
+    </pre>
+    <p>La función anterior convierte la cadena 007 al entero 7. Si el primer carácter de la cadena no puede ser convertido en un número, entonces devuelve NaN.</p>
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>Utiliza parseInt() en la función convertToInteger para convertir la cadena de entrada str a un número entero, y devuélvelo.</p>
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function convertToInteger(str) {
+    }
+    convertToInteger("56");
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function convertToInteger(str) {
+        str = parseInt(str);
+        return str;
+      }
+      convertToInteger("56");
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    convertToInteger debe utilizar la función parseInt() <br>
+    Aprobado: convertToInteger("56") debe devolver un número <br>
+    Aprobado: convertToInteger("56") debe devolver 56 <br>
+    Aprobado: convertToInteger("77") debe devolver 77 <br>
+    Aprobado: convertToInteger("JamesBond") debe devolver NaN
+</body>
+
+</html>
