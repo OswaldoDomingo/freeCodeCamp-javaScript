@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utiliza recursión para crear una cuenta regresiva</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio113.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Utiliza recursión para crear una cuenta regresiva</h1>
+    <h2>Ejercicio 113</h2>
+    <p>En un <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion">reto anterior</a>, aprendiste a utilizar la recursividad para sustituir un bucle <b>for</b>. Ahora, echemos un vistazo a una función más compleja que devuelve un arreglo de enteros consecutivos empezando con <b>1</b> hasta el número pasado a la función.</p>
+    <p>Como se menciona en el desafío anterior, habrá un <i>caso base</i>. El caso base le dice a la función recursiva cuando no necesita llamarse a sí misma. Es un caso simple donde el valor de retorno ya se conoce. También habrá una <i>llamada recursiva</i> la cual ejecuta la función original con argumentos diferentes. Si la función se escribe correctamente, eventualmente el caso base será alcanzado.</p>
+    <p>Por ejemplo, digamos que quieres escribir una función recursiva que devuelva un arreglo conteniendo los números <b>1</b> hasta <b>n</b>. Esta función necesitará aceptar un argumento, <b>n</b> que representa el número final. Entonces necesitará llamarse a sí misma con valores progresivamente más pequeños de <b>n</b> hasta que alcance <b>1</b>. Podrías escribir la función de la siguiente manera:</p>
+    <pre>
+    function countup(n) {
+        if (n < 1) {
+            return [];
+        } else {
+            const countArray = countup(n - 1);
+            countArray.push(n);
+            return countArray;
+        }
+    }
+    console.log(countup(5));      
+    </pre>
+    <p>El valor <b>[1, 2, 3, 4, 5]</b> se mostrará en la consola.</p>
+    <p>Al principio, esto parece contraintuitivo ya que el valor de <b>n</b> disminuye, pero los valores en el arreglo final se están incrementando. Esto sucede porque la inserción ocurre al último, después de la llamada recursiva. En el punto donde <b>n</b> es empujado en el arreglo,<b> countup(n - 1)</b> ya ha sido evaluada y devuelto <b>[1, 2, ..., n - 1]</b>.</p>
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>Hemos definido una función llamada <b>countdown</b> con un parámetro <b>(n)</b>. La función debe usar recursión para devolver un arreglo conteniendo los <b>n</b> enteros hasta <b>1</b> basado en el parámetro <b>n</b>. Si la función es llamada con un núme   ro menor a 1, la función debe devolver un arreglo vacío. Por ejemplo, llamar esta función con <b>n = 5</b> debe devolver el arreglo <b>[5, 4, 3, 2, 1]</b>. Tu función debe usar recursión llamándose a sí misma y no debe usar bucles de ningún tipo.</p>
+    <hr>
+    <!-- Propuesta de ejercicio -->
+    <br>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    // Cambia solo el código debajo de esta línea
+    function countdown(n){
+      return;
+    }
+    // Cambia solo el código encima de esta línea
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function countdown(n){
+        if(n < 1){
+          return[];
+        } else{
+          return [n].concat(countdown (n-1));
+        }
+      }
+      console.log(countdown(10))
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado: countdown(-1) debe devolver un arreglo vacío. <br>
+    Aprobado: countdown(10) debe devolver [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] <br>
+    Aprobado: countdown(5) debe devolver [5, 4, 3, 2, 1] <br>
+    Aprobado: Tu código no debe depender de ningún tipo de bucles (for, while o funciones de orden alto tales como forEach, map, filter, y reduce). <br>
+    Aprobado: Debes usar recursión para resolver este problema. <br>
+    Aprobado: No se debe usar variables globales como almacenamiento temporal del array.
+</body>
+
+</html>

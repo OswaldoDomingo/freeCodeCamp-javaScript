@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usa recursión para crear un rango de números</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio114.js"></script>
+</head>
+
+<body>
+    <img src="imagenes/js.png" width="100px" height="100px" alt="Logo javaScript">
+    <h1>Usa recursión para crear un rango de números</h1>
+    <h2>Ejercicio 114</h2>
+    <p>Continuando con el desafío anterior, te ofrecemos otra oportunidad de crear una función recursiva para resolver
+        un problema.</p>
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <!-- Propuesta de ejercicio -->
+    <p>Hemos definido una función llamada <b>rangeOfNumbers</b> con dos parámetros. La función debe devolver un arreglo de enteros que comienza con el número representado por el parámetro <b>startNum</b> y termina con el número representado por el parámetro <b>endNum</b>. El número inicial será siempre menor o igual que el número final. Tu función debe utilizar recursión, llamándose a sí misma, y no utilizar bucles de ningún tipo. También debe funcionar en el caso que <b>startNum</b> y <b>endNum</b> sean iguales.</p>
+    <hr>
+    <pre class="codigoFalso">
+    codigo ejemplo:
+    function rangeOfNumbers(startNum, endNum) {
+        return [];
+      };
+    </pre>
+    <br>
+    <!-- Código ya resuelto -->
+    <pre>
+    Código resuelto:
+    function rangeOfNumbers(startNum, endNum) {
+        if (endNum < startNum) {
+          console.log(startNum + " < " + endNum);
+          return [];
+        } else {
+          const numbers = rangeOfNumbers(startNum, endNum - 1);
+          numbers.push(endNum);
+          return numbers;
+        }
+      }
+    </pre>
+    <!-- Resultados de el código -->
+    Pruebas <br>
+    Aprobado:Tu función debe devolver un arreglo. <br>
+    Aprobado:Tu código no debe utilizar bucles (for, while o funciones de orden superior como forEach, map, filter, o reduce). <br>
+    Aprobado:rangeOfNumbers debe utilizar recursión (llamadas a sí mismo) para resolver este desafío. <br>
+    Aprobado:rangeOfNumbers(1, 5) debe devolver [1, 2, 3, 4, 5]. <br>
+    Aprobado:rangeOfNumbers(6, 9) debe devolver [6, 7, 8, 9]. <br>
+    Aprobado:rangeOfNumbers(4, 4) debe devolver [4]. <br>
+    Aprobado:No se debe usar variables globales como almacenamiento temporal del array.
+</body>
+
+</html>
