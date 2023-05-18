@@ -115,3 +115,4 @@ Haciendo la certificación de Algoritmos de JavaScript y Estructuras de Datos. <
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio111.html">111	-	Usa el operador condicional (ternario) </a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio112.html">112	-	Usa múltiples operadores condicionales (ternarios) </a> <br>
 <a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio113.html">113	-	Utiliza recursión para crear una cuenta regresiva </a> <br>
+<a href="https://github.com/oswaldodomingo/freeCodeCamp-javaScript/blob/main/Ejercicio114.html">114	-	Usa recursión para crear un rango de números </a> <br>
