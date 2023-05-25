@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muta un arreglo declarado con const</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="Ejercicio002.js"></script>
+    <img src="imagenes/js.png" alt="logo JavaScript" width="100px" height="100px" srcset="No se para que sirve">
+    <h1>Muta un arreglo declarado con const</h1>
+    <p>Si no estás familiarizada con const, verifica <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-a-read-only-variable-with-the-const-keyword">este desafío sobre la palabra clave <b>const</b></a> .</p>
+    <p>La declaración con<b>const</b>st tiene muchos casos de uso, en el JavaScript moderno.</p>
+    <p>Algunos desarrolladores prefieren asignar todas sus variables utilizando <b>const</b> por defecto, a menos que sepan que necesitarán reasignar el valor. Solo en ese caso, utilizan <b>let</b>.</p>
+    <p>Sin embargo, es importante comprender que los objetos (incluyendo arreglos y funciones), asignados a una variable usando <b>const</b> siguen siendo mutables. Usar la declaración <b>const</b> solo previene la reasignación del identificador de una variable.</p>
+    <pre>
+    const s = [5, 6, 7];
+    s = [1, 2, 3];
+    s[2] = 45;
+    console.log(s);
+    </pre>
+    <p><b>s = [1, 2, 3]</b> resultará en un error. Después de comentar esa línea, el <b>console.log</b> mostrará el valor <b>[5, 6, 45]</b>.</p>
+    <p>Como puedes ver, puedes mutar el objeto <b>[5, 6, 7]</b> en sí mismo y la variable <b>s</b> seguirá apuntado al arreglo alterado <b>[5, 6, 45]</b>. Como todos los arreglos, los elementos del arreglo en <b>s</b> son mutables, pero debido a que se utilizó <b>const</b>, no puedes utilizar el identificador de la variable <b>s</b> para apuntar a un arreglo diferente usando el operador de asignación.</p>
+    <!-- Propuesta de ejercicio -->
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>Un arreglo es declarado como <b>const s = [5, 7, 2]</b>. Cambia el arreglo a <b>[2, 5, 7]</b> utilizando varias asignaciones de elementos.</p>
+    <hr>
+    <br>
+    <pre class="codigoFalso">
+    Código ejemplo:
+    const s = [5, 7, 2];
+    function editInPlace() {
+    // Cambia solo el código debajo de esta línea
+
+    // Usar s = [2, 5, 7] sería inválido
+
+    // Cambia solo el código encima de esta línea
+    }
+    editInPlace();
+    </pre>
+    <br>
+    <pre>
+    Código resuelto:
+    const s = [5, 7, 2];
+    function editInPlace() {
+        s[0]=2;
+        s[1]=5;
+        s[2]=7; 
+    }
+    editInPlace();
+    </pre>
+        <!-- Resultados de el código -->
+     Pruebas <br>
+     Aprobado:No debes reemplazar la palabra clave const. <br>
+     Aprobado:s debe ser una variable constante (utilizando const). <br>
+     Aprobado:No debes cambiar la declaración original del arreglo. <br>
+     Aprobado:s debe ser igual a [2, 5, 7].
+</body>
+</html>

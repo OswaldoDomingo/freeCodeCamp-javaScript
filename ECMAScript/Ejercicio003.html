@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevenir la mutación del objeto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <script src=""></script>
+    <img src="imagenes/js.png" alt="logo JavaScript" width="100px" height="100px" srcset="No se para que sirve">
+    <h1>Prevenir la mutación del objeto</h1>
+    <p>Como se vio en el desafío anterior, la declaración <b>const</b> por sí sola no protege la información de la
+        mutación. Para asegurar que tu información no cambie, JavaScript provee una función <b>Object.freeze</b> para
+        prevenir la mutación de datos.</p>
+    <p>Cualquier intento de cambiar el objeto será rechazado, lanzando un error si el script se ejecuta en modo estricto
+        (strict mode).</p>
+    <pre class="codigoFalso">
+    let obj = {
+        name:"FreeCodeCamp",
+        review:"Awesome"
+        };
+    Object.freeze(obj);
+    obj.review = "bad";
+    obj.newProp = "Test";
+    console.log(obj); 
+    </pre>
+    <p>Las asignaciones <b>obj.review</b> y <b>obj.newProp</b> provocarán errores, porque nuestro editor se ejecuta en
+        modo estricto por defecto, y la consola mostrará el valor <b>{ name: "FreeCodeCamp", review: "Awesome" }</b>.
+    </p>
+    <!-- Propuesta de ejercicio -->
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>En este desafío vas a utilizar <b>Object.freeze</b> para prevenir el cambio de constantes matemáticas. Necesitas
+        congelar el objeto <b>MATH_CONSTANTS</b> para que nadie pueda alterar el valor de <b>PI</b>, añadir o borrar
+        propiedades.</p>
+    <hr>
+    <br>
+    <pre class="codigoFalso">
+    Código ejemplo:
+    function freezeObj() {
+        const MATH_CONSTANTS = {
+          PI: 3.14
+        };
+        // Cambia solo el código debajo de esta línea
+      
+      
+        // Cambia solo el código encima de esta línea
+        try {
+          MATH_CONSTANTS.PI = 99;
+        } catch(ex) {
+          console.log(ex);
+        }
+        return MATH_CONSTANTS.PI;
+      }
+      const PI = freezeObj();
+    </pre>
+    <br>
+    <pre>
+    Código resuelto:
+    function freezeObj() {
+        const MATH_CONSTANTS = {
+          PI: 3.14
+        };
+        <b>Object.freeze(MATH_CONSTANTS);</b>
+        try {
+          MATH_CONSTANTS.PI = 99;
+        } catch(ex) {
+          console.log(ex);
+        }
+        return MATH_CONSTANTS.PI;
+      }
+      const PI = freezeObj();    
+        </pre>
+    <!-- Resultados de el código -->
+    <h3>Explicación del código</h3>
+    <p>Este código define una función llamada freezeObj() que tiene el propósito de congelar un objeto llamado MATH_CONSTANTS. 
+    <br> Veamos paso a paso lo que hace:</p>
+    <p>1. Se declara la función freezeObj().</p>
+    <p> 2. Dentro de la función, se define una constante MATH_CONSTANTS que es un objeto con una propiedad llamada PI que tiene el valor 3.14.</p>
+    <p>3. Luego, se utiliza el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze">Object.freeze()</a> para congelar el objeto MATH_CONSTANTS. Al congelar un objeto, se evita que sus propiedades sean modificadas, reasignadas o eliminadas.</p>
+    <p>4. Después de congelar el objeto, se intenta cambiar el valor de la propiedad PI a 99 dentro de un bloque try-catch.</p>
+    <p>5. Como el objeto MATH_CONSTANTS está congelado, la asignación MATH_CONSTANTS.PI = 99 no tiene efecto y lanza una excepción.</p>
+    <p>6. La excepción es capturada por el bloque catch y se muestra en la consola a través de console.log(ex).</p>
+    <p>7. Finalmente, la función retorna el valor de MATH_CONSTANTS.PI, que sigue siendo 3.14 ya que no se pudo modificar debido a que el objeto está congelado.</p>
+    <p>En resumen, este código demuestra cómo se puede utilizar el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze">Object.freeze()</a> para proteger un objeto de modificaciones no deseadas. En este caso, el objeto MATH_CONSTANTS se congela y cualquier intento de cambiar su propiedad PI resulta en una excepción.</p>
+    <h3>Diferencia entre <b>const</b> y <b>Object.freeze()</b></h3>
+    <p>Al utilizar const para declarar una variable, estás indicando que su valor no puede ser reasignado. Sin embargo, esto no impide que el contenido del objeto al que la variable hace referencia sea modificado. Es decir, aunque no puedas asignar una nueva referencia a la variable const, aún puedes modificar las propiedades del objeto al que apunta.</p>
+    <p>Por otro lado, Object.freeze() es un método que se utiliza para congelar un objeto en su totalidad, lo que significa que ninguna de sus propiedades puede ser modificada, agregada o eliminada. Al aplicar Object.freeze() a un objeto, este se vuelve inmutable y no puede ser alterado de ninguna manera.</p>
+    <p>En resumen, const se refiere a la inmutabilidad de la variable en sí misma, mientras que Object.freeze() se refiere a la inmutabilidad del objeto al que la variable hace referencia. Puedes utilizar const para evitar la reasignación de variables, pero si deseas garantizar que el objeto en sí no cambie, debes utilizar Object.freeze().
+    </p>
+    Pruebas <br>
+    Aprobado:No debes reemplazar la palabra clave const. <br>
+    Aprobado:MATH_CONSTANTS debe ser una variable constante (utilizando const). <br>
+    Aprobado:No debes modificar la declaración original de MATH_CONSTANTS. <br>
+    Aprobado:PI debe ser igual a 3.14.  
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto+Mono&display=swap');
+  }
+body, pre{
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+pre {            
+    background-color: black; color: aliceblue; width: 450px; padding: 10px;
+    width: max-content;
+}
+.codigoFalso{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(53, 53, 53);
+    color: chocolate;
+}
+.beta{
+    background-color: white;
+    color: black;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+  }
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: var(--tertiary-background);
+  }
+  b{
+    background-color: silver;
+    padding: 2px;
+  }
+  pre>b{
+    background-color: silver;
+    color:rgb(119, 33, 30);
+    padding: 2px;
+  }

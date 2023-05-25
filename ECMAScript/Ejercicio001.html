@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compara el alcance de las palabras clave "var" y "let"</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="Ejercicio001.js"></script>
+    <img src="imagenes/js.png" alt="logo JavaScript" width="100px" height="100px" srcset="No se para que sirve">
+    <h1>Compara el alcance de las palabras clave "var" y "let"</h1>
+    <p>Si no estás familiarizado con let, verifica <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/explore-differences-between-the-var-and-let-keywords">este desafío sobre la diferencia entre <b>let</b> y <b>var</b></a>.</p>
+    <p>Cuando declaras una variable con la palabra clave <b>var</b>, esta es declarada globalmente o localmente sí es declarada dentro de una función.</p>
+    <p>La palabra clave <b>let</b> se comporta de forma similar, pero con algunas características adicionales. Cuanto declaras una variable con la palabra clave <b>let</b> dentro de un bloque, una declaración o expresión. Su alcance está limitado a ese bloque, declaración o expresión.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+    var numArray = [];
+    for (var i = 0; i < 3; i++) {
+        numArray.push(i);
+    }
+    console.log(numArray);
+    console.log(i);        
+    </pre>
+    <p>Aquí la consola mostrará los valores <b>[0, 1, 2]</b> y <b>3</b>.</p>
+    <p>Con la palabra clave <b>var</b>, <b>i</b> es declarada globalmente. Así, cuando <b>i++</b> es ejecutado, la variable global es actualizada. Este código es similar al siguiente:</p>
+    <pre>
+    var numArray = [];
+    var i;
+    for (i = 0; i < 3; i++) {
+        numArray.push(i);
+    }
+    console.log(numArray);
+    console.log(i);
+    </pre>
+    <p>Aquí la consola mostrará los valores <b>[0, 1, 2]</b> y <b>3</b>.</p>
+    <p>Este comportamiento causará problemas si creas una función y la almacenas para su uso posterior dentro de un bucle <b>for</b> que usa la variable <b>i</b>. Esto se debe a que la función almacenada siempre se referirá al valor de la variable global <b>i</b> actualizada.</p>
+    <pre>
+    var printNumTwo;
+    for (var i = 0; i < 3; i++) {
+        if (i === 2) {
+        printNumTwo = function() {
+            return i;
+        };
+        }
+    }
+    console.log(printNumTwo());
+    </pre>
+    <p>Aquí la consola mostrará el valor <b>3</b>.</p>
+    <p>Como puedes ver, <b>printNumTwo()</b> imprime <b>3</b> y no <b>2</b>. Esto es porque el valor asignado a <b>i</b> fue actualizado y la función <b>printNumTwo()</b> devuelve el global de <b>i</b> y no el valor que tenía <b>i</b> cuando la función fue creada en el bucle <b>for</b>. La palabra clave <b>let</b> no sigue este comportamiento:</p>
+    <pre>
+        let printNumTwo;
+for (let i = 0; i < 3; i++) {
+  if (i === 2) {
+    printNumTwo = function() {
+      return i;
+    };
+  }
+}
+console.log(printNumTwo());
+console.log(i);
+</pre>
+<p>Aquí la consola mostrará el valor <b>2</b> y el error que <b>i is not defined</b>.</p>
+<p><b>i</b> no está definida, porque no ha sido declarada en el ámbito global. Solo ha sido declarada dentro de la sentencia de bucle <b>for</b>. <b>printNumTwo()</b> devolvió el valor correcto, porque tres variables diferentes de <b>i</b> con valores únicos <b>(0, 1 y 2)</b> fueron creadas por la palabra clave <b>let</b> dentro de la sentencia del bucle.</p>
+    <!-- Propuesta de ejercicio -->
+    <hr>
+    <!-- Pregunta -->
+    <p>Pregunta:</p>
+    <p>Corrige el código para que la variable <b>i</b>, declarada en la sentencia <b>if</b> sea una variable separada de la variable <b>i</b>, declarada en la primera línea de la función. Asegúrate de no utilizar la palabra clave <b>var</b> en ninguna parte de tu código.</p>
+    <p>Este ejercicio está diseñado para ilustrar la diferencia entre como las palabras claves <b>var</b> y <b>let</b> asignan ámbito a la variable declarada. Cuando programas una función similar a la que es usada en este ejercicio, es a menudo mejor usar diferentes nombres de variables para evitar confusión.</p>
+    <hr>
+    <br>
+    <pre class="codigoFalso">
+    Código ejemplo:
+    function checkScope() {
+        var i = 'function scope';
+        if (true) {
+          i = 'block scope';
+          console.log('Block scope i is: ', i);
+        }
+        console.log('Function scope i is: ', i);
+        return i;
+    }
+    </pre>
+    <br>
+    <pre>
+    Código resuelto:
+    function checkScope() {
+        <b>let</b> i = 'function scope';
+        if (true) {
+          <b>let</b> i = 'block scope';
+          console.log('Block scope i is: ', i);
+        }
+        console.log('Function scope i is: ', i);
+        return i;
+      }        
+        </pre>
+        <!-- Resultados de el código -->
+     Pruebas <br>
+     Aprobado: var no debería existir en el código. <br>
+     Aprobado: La variable i declarada en la sentencia if debe ser igual a la cadena block scope. <br>
+     Aprobado: checkScope() debe devolver la cadena function scope
+</body>
+</html>
